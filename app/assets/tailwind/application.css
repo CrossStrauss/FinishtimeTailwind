@@ -1,0 +1,60 @@
+@import "tailwindcss";
+
+
+@theme {
+
+    /* Font */
+    --font-poppins: "Poppins", sans-serif; 
+  
+    /* Colours - General */
+    --color-primary-blue: oklch(0.3597 0.1241 264.13);
+    --color-light-grey: oklch(0.9642 0 0);
+    --color-light-blue: oklch(0.8095 0.1109 210.77);
+}
+
+body {
+    font-family: montserrat;
+}
+
+.linear-light-grey {
+  background: linear-gradient(to bottom, #ffffff, #F3F3F3);
+}
+
+.underlay-offset {
+    transform: translate3d(-60px, -50px, -60px);
+}
+
+.background-card-underlay {
+    width: 70%;
+    aspect-ratio: 1;
+}
+
+@layer utilities {
+
+    .btn-blue-solid {
+        @apply border border-primary-blue bg-primary-blue font-bold text-white rounded-full
+    }
+
+    .btn-blue-solid:hover {
+        @apply border border-primary-blue bg-white font-bold text-primary-blue rounded-full
+    }
+
+    .btn-blue-outline {
+        @apply border border-primary-blue bg-white font-bold text-primary-blue rounded-full
+    }
+
+    .btn-blue-outline:hover {
+        @apply border border-primary-blue bg-primary-blue font-bold text-white rounded-full
+    }
+
+    .btn-white-outline {
+        @apply border border-white bg-transparent font-bold text-white rounded-full
+    }
+
+    .btn-white-outline:hover {
+        @apply border border-primary-blue bg-white font-bold text-white rounded-full
+    }
+
+}
+
+
