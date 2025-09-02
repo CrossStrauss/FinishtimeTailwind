@@ -1,4 +1,4 @@
-<nav class="bg-transparent fixed w-full z-20 top-0 start-0">
+<nav class="bg-transparent fixed w-full z-20 top-0 start-0" data-controller="navbar" data-navbar-target="nav">
   <div class="flex flex-wrap items-center justify-between p-4">
     <a href="#" class="flex items-center space-x-3 rtl:space-x-reverse">
          <%= image_tag 'easyreg_logo_cropped.png', class: 'pl-3 xl:pl-3 h-12' %>
@@ -25,7 +25,7 @@
           <li><a href="#" class="nav-link text-dark-custom lg:text-white mx-3 uppercase font-bold">News</a></li>
           <li><a href="#" class="nav-link text-dark-custom lg:text-white mx-3 uppercase font-bold">Where to Stay</a></li>
           <li><a href="#" class="nav-link text-dark-custom lg:text-white mx-3 uppercase font-bold">Contact Us</a></li>
-          <li class="flex flex-row">
+          <li class="flex flex-row lg:hidden">
             <i class="fa-brands fa-facebook mx-2 text-[24px] text-white"></i>
             <i class="fa-brands fa-instagram mx-2 text-[24px] text-white"></i>
             <i class="fa-brands fa-x-twitter mx-2 text-[24px] text-white"></i>
@@ -34,17 +34,6 @@
     </div>
   </div>
 </nav>
-
-
-<!-- Toggle Script -->
-<script>
-  const toggler = document.getElementById('navbar-toggler');
-  const menu = document.getElementById('navbar-menu');
-  
-  toggler.addEventListener('click', () => {
-    menu.classList.toggle('hidden');
-  });
-</script>
 
 
 <!-- Banner Section -->
@@ -764,26 +753,29 @@
   </div>
 
   <!-- Navbar filters -->
-  <div class="flex justify-center">
+  <div class="flex justify-center" data-controller="accordion">
     <nav class="w-full">
       <div class="flex flex-col xl:flex-row items-center justify-center">
-        <!-- Search (mobile only) -->
-        <div class="relative flex xl:hidden w-full max-w-md mb-4">
-          <input 
-            type="text"
-            placeholder="Search"
-            class="w-full py-2 pl-4 pr-12 rounded-full bg-transparent border border-dark uppercase text-dark focus:outline-none"
-          >
-          <i class="fa-solid fa-magnifying-glass absolute right-4 top-1/2 -translate-y-1/2 text-dark"></i>
+
+        <div class="lg:hidden w-full flex flex-row">
+          <div class="relative flex lg:hidden w-[75%] lg:w-[0px] max-w-md mb-4 h-10 pe-3">
+            <input 
+              type="text"
+              placeholder="Search"
+              class="w-full py-2 pl-4 pr-12 rounded-full bg-transparent border border-dark uppercase text-dark focus:outline-none"
+            >
+            <i class="fa-solid fa-magnifying-glass absolute right-8 top-1/2 -translate-y-2/3 text-dark"></i>
+          </div>
+
+          <button class="xl:hidden btn-blue-solid py-2 rounded-full text-white w-[25%] h-10" 
+                  data-accordion-target="accordionButton"
+                  data-action="click->accordion#toggleAccordion">
+                  <i class="fa-solid fa-filter"></i>
+          </button>
         </div>
 
-        <!-- Filter button (mobile only) -->
-        <button class="xl:hidden bg-blue-600 py-2 rounded-full w-20 text-white">
-          <i class="fa-solid fa-filter"></i>
-        </button>
-
         <!-- Tabs -->
-        <div class="flex flex-wrap justify-evenly w-[65%] mt-4 xl:mt-0">
+        <div class="flex flex-wrap justify-evenly w-full accordion-close lh:h-[50px] lg:w-[65%] mt-4 xl:mt-0 items-center" data-accordion-target="accordionWindow">
           <a href="#" class="py-2 px-4 flex justify-center rounded-full mb-3 no-underline border border-primary-blue text-primary-blue px-6">
             <p class="mb-0">View all</p>
           </a>
@@ -960,7 +952,7 @@
 </div>
 
 <!-- Event Results -->
-<div class="py-10">
+<div class="py-10" data-controller="accordion">
   <!-- Buttons -->
   <div class="w-full flex justify-center py-3 lg:pb-5 flex-wrap gap-3">
     <button type="submit" class="btn-dark-solid px-4 py-2 rounded-full uppercase h-[60px] w-[75%] lg:w-[180px] mt-3 lg:mt-0">
@@ -996,23 +988,25 @@
               <input type="email" placeholder="Search" class="form-input rounded-full bg-transparent border border-gray-300 text-black uppercase pl-4 pr-12 h-10">
               <i class="fa-solid fa-magnifying-glass absolute right-4 top-1/2 -translate-y-1/2 text-gray-800"></i>
             </div>
-            <button class="bg-red-600 py-2 rounded-full w-20 flex justify-center items-center">
-              <i class="fa-solid fa-filter text-white"></i>
+            <button class="bg-red-600 py-2 rounded-full w-20 flex justify-center items-center"
+                    data-accordion-target="accordionButton"
+                    data-action="click->accordion#toggleAccordion">
+                    <i class="fa-solid fa-filter text-white"></i>
             </button>
           </div>
-          <div class="flex flex-row justify-between">
-            <div class="hidden xl:flex justify-evenly flex-wrap gap-2 w-[25%]">
+          <div class="flex flex-col lg:flex-row justify-around lg:justify-between accordion-close" data-accordion-target="accordionWindow">
+            <div class="flex items-center justify-start lg:justify-evenly flex-wrap flex-row gap-2 w-full lg:w-[25%]">
               <a href="#" class="bg-red-dark text-white px-4 py-2 rounded-full font-medium text-center">21KM</a>
               <a href="#" class="text-black px-4 py-2 rounded-full font-medium text-center">50KM</a>
               <a href="#" class="text-black px-4 py-2 rounded-full font-medium text-center">100KM</a>
             </div>
 
-            <div class="my-1 w-[5%] flex justify-center">
+            <div class="hidden my-1 w-[5%] lg:flex justify-center">
               <div class="border-e border-gray-300 h-full">
               </div>
             </div>
 
-            <div class="flex flex-wrap justify-start xl:justify-evenly gap-2 w-[70%]">
+            <div class="flex items-center flex-wrap justify-start xl:justify-evenly gap-2 w-full lg:w-[70%]">
               <a href="#" class="bg-red-dark text-white px-4 py-2 rounded-full font-medium text-center uppercase">All results</a>
               <a href="#" class="text-black px-4 py-2 rounded-full font-medium text-center uppercase">Category results</a>
               <a href="#" class="text-black px-4 py-2 rounded-full font-medium text-center uppercase">Gender Results</a>
@@ -1039,7 +1033,7 @@
             </tr>
           </thead>
           <tbody>
-            <tr class="border-t border-gray-300">
+            <tr class="py-3">
               <td class="text-center px-2 py-1">1</td>
               <td class="text-center px-2 py-1">2288</td>
               <td class="px-2 py-1"><a href="#" class="underline text-blue-600">Julian FRYMAN</a></td>
@@ -1116,10 +1110,10 @@
                 </tr>
               </thead>
               <tbody>
-                <tr class="border-t border-gray-300">
-                  <td class="text-center px-2 py-1">Female</td>
-                  <td class="text-center px-2 py-1">2288</td>
-                  <td class="text-center px-2 py-1">2000</td>
+                <tr class="">
+                  <td class="text-center px-2 py-2">Female</td>
+                  <td class="text-center px-2 py-2">2288</td>
+                  <td class="text-center px-2 py-2">2000</td>
                 </tr>
               </tbody>
             </table>
@@ -1141,13 +1135,13 @@
                 </tr>
               </thead>
               <tbody>
-                <tr class="border-t border-gray-300">
-                  <td class="text-center px-2 py-1">Female</td>
-                  <td class="text-center px-2 py-1">Junior</td>
-                  <td class="px-2 py-1">1</td>
-                  <td class="text-center px-2 py-1">1</td>
-                  <td class="text-center px-2 py-1">1:30:22</td>
-                  <td class="text-center px-2 py-1">1:45:22</td>
+                <tr class="">
+                  <td class="text-center px-2 py-2">Female</td>
+                  <td class="text-center px-2 py-2">Junior</td>
+                  <td class="px-2 py-2">1</td>
+                  <td class="text-center px-2 py-2">1</td>
+                  <td class="text-center px-2 py-2">1:30:22</td>
+                  <td class="text-center px-2 py-2">1:45:22</td>
                 </tr>
               </tbody>
             </table>
@@ -1182,7 +1176,7 @@
         </div>
         <div class="w-full lg:w-3/12">
           <div class="relative flex">
-            <input type="email" placeholder="Search" class="form-input rounded-full bg-transparent border border-gray-300 text-black uppercase pl-4 pr-12 h-10">
+            <input type="email" placeholder="Search" class="form-input rounded-full bg-transparent border border-gray-300 text-black uppercase pl-4 pr-12 h-10 w-full">
             <i class="fa-solid fa-magnifying-glass absolute right-4 top-1/2 -translate-y-1/2 text-gray-800 hidden md:flex items-center"></i>
           </div>
         </div>

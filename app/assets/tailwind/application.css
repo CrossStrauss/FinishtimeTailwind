@@ -97,6 +97,22 @@ body {
     .btn-dark-solid:hover {
         @apply border border-dark-custom bg-white font-bold text-dark-custom rounded-full
     }
+
+    .scrolled {
+        @apply bg-primary-blue transition duration-200 ease-in-out
+    }
+
+    .at-top {
+        @apply bg-transparent transition duration-200 ease-in-out
+    }
+
+    .accordion-open {
+        @apply h-[200px] overflow-hidden duration-200 ease-in-out
+    }
+
+    .accordion-close {
+        @apply h-[0px] overflow-hidden duration-200 ease-in-out lg:h-[50px]
+    }
 }
 
 
