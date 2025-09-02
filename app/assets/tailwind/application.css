@@ -10,10 +10,12 @@
     --color-primary-blue: oklch(0.3597 0.1241 264.13);
     --color-light-grey: oklch(0.9642 0 0);
     --color-light-blue: oklch(0.8095 0.1109 210.77);
+    --color-dark-custom: oklch(0.1743 0.0412 276.93);
 }
 
 body {
     font-family: montserrat;
+    color: oklch(0.1743 0.0412 276.93);
 }
 
 .linear-light-grey {
@@ -54,7 +56,22 @@ body {
     .btn-white-outline:hover {
         @apply border border-primary-blue bg-white font-bold text-white rounded-full
     }
+    
+    .btn-dark-outline {
+        @apply border border-dark-custom bg-white font-bold text-dark-custom rounded-full
+    }
 
+    .btn-dark-outline:hover {
+        @apply border border-dark-custom bg-dark-custom font-bold text-white rounded-full
+    }
+
+    .btn-dark-solid {
+        @apply border border-dark-custom bg-black font-bold text-white rounded-full
+    }
+
+    .btn-dark-solid:hover {
+        @apply border border-dark-custom bg-white font-bold text-dark-custom rounded-full
+    }
 }
 
 
