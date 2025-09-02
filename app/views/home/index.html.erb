@@ -39,7 +39,7 @@
 <!-- Banner Section -->
 <div class="relative h-[90vh]">
     <%= image_tag 'event-banner.jpg', class: 'w-full h-full object-cover absolute z-1' %>
-    <div class="container mx-auto h-full px-5">
+    <div class="container mx-auto h-full px-6">
         <div class="flex flex-col items-start justify-center h-full z-10 relative">
             <div class="flex flex-col w-full lg:w-7/12">
                 <p class="uppercase text-center lg:text-left text-white font-semibold tracking-wide mb-0 text-[15px] lg:text-[20px]">
@@ -1269,6 +1269,344 @@
     </div>
   </div>
 </div>
+
+
+<!-- Center Banner -->
+<div class="relative h-[55vh] py-5 lg:py-0">
+    <!-- Background Image -->
+    
+    <%= image_tag 'Rectangle_121.jpg', class: 'absolute inset-0 w-full h-full object-cover -z-10 top-0' %>
+    <!-- Content -->
+    <div class="container mx-auto px-3 h-[55vh] flex items-center justify-center">
+        <div class="flex flex-col items-center w-full xl:w-7/12 px-3 text-center">
+        <p class="uppercase text-center lg:text-left text-light-blue font-semibold tracking-wide mb-0 text-[15px] lg:text-[20px]">
+            Lorem Ipsum
+        </p>
+        <h2 class="text-center lg:text-left text-white font-extrabold uppercase mb-4 text-[30px] lg:text-[65px] lg:leading-16">
+            Newsletter
+        </h2>
+        <p class="text-white font-normal text-base opacity-50 w-3/4">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+            tempor incididunt ut labore et dolore magna aliqua.
+        </p>
+        </div>
+    </div>
+</div>
+
+
+<!-- Newsletter Cards -->
+<div class="container mx-auto px-3 md:px-20 py-12" data-controller="accordion">
+  <div class="flex flex-col items-center mb-6">
+    <p class="uppercase text-center font-semibold tracking-wide mb-0 text-[15px] lg:text-[20px] text-primary-blue">
+      newsletter
+    </p>
+    <h2 class="text-center lg:text-left text-dark font-extrabold uppercase mb-4 text-[30px] lg:text-[55px] lg:leading-16">
+      Lorem Ipsum
+    </h2>
+  </div>
+
+  <!-- Filter / Tabs -->
+  <div class="flex flex-col items-center w-full mb-6">
+    <!-- Mobile Filter button -->
+    <div class="lg:hidden w-full flex flex-row">
+      <div class="relative flex lg:hidden w-[75%] lg:w-[0px] max-w-md mb-4 h-10 pe-3">
+        <input 
+          type="text"
+          placeholder="Search"
+          class="w-full py-2 pl-4 pr-12 rounded-full bg-transparent border border-dark uppercase text-dark focus:outline-none"
+        >
+        <i class="fa-solid fa-magnifying-glass absolute right-8 top-1/2 -translate-y-2/3 text-dark"></i>
+      </div>
+
+      <button class="xl:hidden btn-blue-solid py-2 rounded-full text-white w-[25%] h-10" 
+              data-accordion-target="accordionButton"
+              data-action="click->accordion#toggleAccordion">
+              <i class="fa-solid fa-filter"></i>
+      </button>
+    </div>
+
+    <!-- Tabs -->
+    <div class="flex flex-wrap justify-evenly w-full accordion-close lh:h-[50px] lg:w-[65%] mt-4 xl:mt-0 items-center" data-accordion-target="accordionWindow">
+      <a href="#" class="py-2 px-4 flex justify-center rounded-full mb-3 no-underline border border-primary-blue text-primary-blue px-6">
+        <p class="mb-0">View all</p>
+      </a>
+      <a href="#" class="py-2 px-4 flex justify-center rounded-full mb-3 no-underline border border-primary-blue text-primary-blue px-6 active">
+        <p class="mb-0">Running</p>
+      </a>
+      <a href="#" class="py-2 px-4 flex justify-center rounded-full mb-3 no-underline border border-primary-blue text-primary-blue px-6">
+        <p class="mb-0">Cycling</p>
+      </a>
+      <a href="#" class="py-2 px-4 flex justify-center rounded-full mb-3 no-underline border border-primary-blue text-primary-blue px-6">
+        <p class="mb-0">Swimming</p>
+      </a>
+      <a href="#" class="py-2 px-4 flex justify-center rounded-full mb-3 no-underline border border-primary-blue text-primary-blue px-6">
+        <p class="mb-0">Triathlon</p>
+      </a>
+      <a href="#" class="py-2 px-4 flex justify-center rounded-full mb-3 no-underline border border-primary-blue text-primary-blue px-6">
+        <p class="mb-0">Duathlon</p>
+      </a>
+      <a href="#" class="py-2 px-4 flex justify-center rounded-full mb-3 no-underline border border-primary-blue text-primary-blue px-6">
+        <p class="mb-0">Other</p>
+      </a>
+    </div>
+  </div>
+
+  <!-- Cards Grid -->
+  <div class="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-6 px-2 md:px-0">
+    <!-- Card -->
+    <div class="rounded-2xl overflow-hidden border border-gray-200 bg-light-grey">
+      <%= image_tag 'image-placeholder-2.jpg', class: 'w-full h-64 object-cover' %>
+      <div class="p-6">
+        <p class="uppercase mb-2 font-semibold text-[24px]">Lorem Ipsum</p>
+        <p class="mb-4 text-gray-700 text-sm">
+          orem ipsum dolor sit amet, consectetur adipiscing elit, 
+          sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
+          Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris 
+          nisi ut aliquip ex ea commodo consequat. 
+        </p>
+        <div class="pt-3">
+          <button type="submit" class="btn-blue-solid px-4 py-2 rounded-full text-white">
+            Read More
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <div class="rounded-2xl overflow-hidden border border-gray-200 bg-light-grey">
+      <%= image_tag 'image-placeholder-2.jpg', class: 'w-full h-64 object-cover' %>
+      <div class="p-6">
+        <p class="uppercase mb-2 font-semibold text-[24px]">Lorem Ipsum</p>
+        <p class="mb-4 text-gray-700 text-sm">
+          orem ipsum dolor sit amet, consectetur adipiscing elit, 
+          sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
+          Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris 
+          nisi ut aliquip ex ea commodo consequat. 
+        </p>
+        <div class="pt-3">
+          <button type="submit" class="btn-blue-solid px-4 py-2 rounded-full text-white">
+            Read More
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <div class="rounded-2xl overflow-hidden border border-gray-200 bg-light-grey">
+      <%= image_tag 'image-placeholder-2.jpg', class: 'w-full h-64 object-cover' %>
+      <div class="p-6">
+        <p class="uppercase mb-2 font-semibold text-[24px]">Lorem Ipsum</p>
+        <p class="mb-4 text-gray-700 text-sm">
+          orem ipsum dolor sit amet, consectetur adipiscing elit, 
+          sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
+          Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris 
+          nisi ut aliquip ex ea commodo consequat. 
+        </p>
+        <div class="pt-3">
+          <button type="submit" class="btn-blue-solid px-4 py-2 rounded-full text-white">
+            Read More
+          </button>
+        </div>
+      </div>
+    </div>
+    
+  </div>
+
+  <!-- Pagination -->
+  <div class="flex justify-center items-center py-12">
+    <a href="#" class="mx-3 text-[20px] font-semibold text-gray-800">1</a>
+    <a href="#" class="mx-3 text-[20px] font-semibold text-gray-800 opacity-50">2</a>
+    <a href="#" class="mx-3 text-[20px] font-semibold text-gray-800 opacity-50">3</a>
+  </div>
+</div>
+
+
+<!-- Center Banner -->
+<div class="relative h-[55vh] py-5 lg:py-0">
+    <!-- Background Image -->
+    
+    <%= image_tag 'Rectangle_121.jpg', class: 'absolute inset-0 w-full h-full object-cover -z-10 top-0' %>
+    <!-- Content -->
+    <div class="container mx-auto px-3 h-[55vh] flex items-center justify-center">
+        <div class="flex flex-col items-center w-full xl:w-7/12 px-3 text-center">
+        <p class="uppercase text-center lg:text-left text-light-blue font-semibold tracking-wide mb-0 text-[15px] lg:text-[20px]">
+            Lorem Ipsum
+        </p>
+        <h2 class="text-center lg:text-left text-white font-extrabold uppercase mb-4 text-[30px] lg:text-[65px] lg:leading-16">
+            Newsletter Title
+        </h2>
+        <p class="text-white font-normal text-base opacity-50 w-3/4">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+            tempor incididunt ut labore et dolore magna aliqua.
+        </p>
+        </div>
+    </div>
+</div>
+
+<!-- Newsletter -->
+<div class="container mx-auto px-3 md:px-12 py-30">
+  <div class="grid grid-cols-1 xl:grid-cols-12 gap-6 xl:gap-10 px-0 xl:px-5">
+    
+    <!-- Main Content -->
+    <div class="col-span-12 xl:col-span-8 px-3">
+      <%= image_tag 'image-placeholder-2.jpg', class: 'rounded-2xl object-cover w-full max-h-[450px]' %>
+      <p class="font-semibold pt-4">
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
+        Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. 
+      </p>
+
+      <p class="uppercase mb-2 font-semibold text-[24px]">
+        Lorem Ipsum
+      </p>
+
+      <p class="pt-4 text-gray-700 leading-relaxed">
+        ed ut perspiciatis unde omnis iste natus error sit voluptatem 
+        accusantium doloremque laudantium, totam rem aperiam, 
+        eaque ipsa quae ab illo inventore veritatis et 
+        quasi architecto beatae vitae dicta sunt explicabo. Nemo enim 
+        ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, 
+        sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. 
+        Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, 
+        adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et 
+        dolore magnam aliquam quaerat voluptatem. Ut enim ad minima veniam, 
+        quis nostrum exercitationem ullam corporis suscipit laboriosam, 
+        nisi ut aliquid ex ea commodi consequatur? Quis autem vel eum iure reprehenderit 
+        qui in ea voluptate velit esse quam nihil molestiae consequatur, 
+        vel illum qui dolorem eum fugiat quo voluptas nulla pariatur?
+      </p>
+
+      <!-- Pagination Links -->
+      <div class="flex justify-between items-center py-4">
+        <a href="#" class="text-gray-700 opacity-70 font-semibold flex items-center gap-2">
+          <i class="fa-solid fa-angle-left"></i> Previous Post
+        </a>
+        <a href="#" class="text-gray-700 opacity-70 font-semibold flex items-center gap-2">
+          Next Post <i class="fa-solid fa-angle-right"></i>
+        </a>
+      </div>
+
+    </div>
+
+    <!-- Sidebar -->
+    <div class="hidden xl:flex col-span-4 flex-col space-y-6">
+      
+      <!-- Card -->
+      <div class="rounded-2xl overflow-hidden border border-gray-200 bg-light-grey">
+        <%= image_tag 'image-placeholder-2.jpg', class: 'w-full h-48 object-cover' %>
+        <div class="p-6">
+          <p class="uppercase mb-2 font-semibold text-lg">Lorem Ipsum</p>
+          <p class="text-sm text-gray-600">
+            orem ipsum dolor sit amet, consectetur adipiscing elit, 
+            sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
+            Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris 
+            nisi ut aliquip ex ea commodo consequat. 
+          </p>
+          <div class="pt-6">
+            <button type="submit" class="btn-blue-solid px-4 py-2 rounded-full text-white">
+              Read More
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <!-- Repeatable cards -->
+      <div class="rounded-2xl overflow-hidden border border-gray-200 bg-light-grey">
+        <%= image_tag 'image-placeholder-2.jpg', class: 'w-full h-48 object-cover' %>
+        <div class="p-6">
+          <p class="uppercase mb-2 font-semibold text-lg">Lorem Ipsum</p>
+          <p class="text-sm text-gray-600">
+            orem ipsum dolor sit amet, consectetur adipiscing elit, 
+            sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
+            Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris 
+            nisi ut aliquip ex ea commodo consequat. 
+          </p>
+          <div class="pt-6">
+            <button type="submit" class="btn-blue-solid px-4 py-2 rounded-full text-white">
+              Read More
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <div class="rounded-2xl overflow-hidden border border-gray-200 bg-light-grey">
+        <%= image_tag 'image-placeholder-2.jpg', class: 'w-full h-48 object-cover' %>
+        <div class="p-6">
+          <p class="uppercase mb-2 font-semibold text-lg">Lorem Ipsum</p>
+          <p class="text-sm text-gray-600">
+            orem ipsum dolor sit amet, consectetur adipiscing elit, 
+            sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
+            Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris 
+            nisi ut aliquip ex ea commodo consequat. 
+          </p>
+          <div class="pt-6">
+            <button type="submit" class="btn-blue-solid px-4 py-2 rounded-full text-white">
+              Read More
+            </button>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</div>
+
+
+
+<!-- Footer -->
+<footer class="bg-primary-blue pb-10 pt-30">
+  <div class="container mx-auto px-3 md:px-0">
+    <div class="grid grid-cols-1 md:grid-cols-12 gap-8">
+
+      <!-- Logo & description -->
+      <div class="col-span-12 md:col-span-6 flex flex-col items-center md:items-start md:pr-8">
+        <div class="flex justify-center w-[40%]">
+          <%= image_tag 'easyreg_logo_cropped.png', class: ''%>
+        </div>
+        <p class="mt-4 text-center md:text-left text-gray-200 leading-relaxed text-[16px]">
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
+          Ut enim ad minim veniam
+        </p>
+      </div>
+
+      <!-- Navigation Left -->
+      <div class="col-span-6 md:col-span-3 flex flex-col space-y-2 ps-6 lg:ps-0">
+        <p class="text-white mb-4 uppercase font-semibold text-[16px] cursor-pointer">Race Results</p>
+        <p class="text-white mb-4 uppercase font-semibold text-[16px] cursor-pointer">Events</p>
+        <p class="text-white mb-4 uppercase font-semibold text-[16px] cursor-pointer">Services</p>
+        <p class="text-white mb-4 uppercase font-semibold text-[16px] cursor-pointer">News</p>
+        <p class="text-white mb-4 uppercase font-semibold text-[16px] cursor-pointer">Contact Us</p>
+      </div>
+
+      <!-- Navigation Right + Social -->
+      <div class="col-span-6 md:col-span-3 flex flex-col space-y-2 ps-3 lg:ps-0">
+        <p class="text-white mb-4 uppercase font-semibold text-[16px] cursor-pointer">Where we stay</p>
+        <p class="text-white mb-4 uppercase font-semibold text-[16px] cursor-pointer">Contact Us</p>
+        <p class="text-white mb-4 uppercase font-semibold text-[16px] cursor-pointer">About Us</p>
+        <p class="text-white mb-4 uppercase font-semibold text-[16px] cursor-pointer">Privacy</p>
+        
+        <!-- Social icons -->
+        <div class="flex space-x-4 pt-2">
+          <i class="fa-brands fa-facebook text-white text-[20px] hover:text-gray-300"></i>
+          <i class="fa-brands fa-instagram text-white text-[20px] hover:text-gray-300"></i>
+          <i class="fa-brands fa-x-twitter text-white text-[20px] hover:text-gray-300"></i>
+        </div>
+      </div>
+    </div>
+
+    <!-- Divider -->
+    <div class="border-t border-white/50 mt-8"></div>
+
+    <!-- Bottom text -->
+    <div class="flex justify-center mt-6">
+      <p class="text-gray-200 text-center text-[14px]">
+        &copy; 2025 FinishTime. All rights reserved. Website designed by 
+        <strong>Perfect Circle</strong>
+      </p>
+    </div>
+  </div>
+</footer>
+
+
+
+
 
 
 
