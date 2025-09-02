@@ -1,5 +1,53 @@
-<!-- Banner Section -->
+<nav class="bg-transparent fixed w-full z-20 top-0 start-0">
+  <div class="flex flex-wrap items-center justify-between p-4">
+    <a href="#" class="flex items-center space-x-3 rtl:space-x-reverse">
+         <%= image_tag 'easyreg_logo_cropped.png', class: 'pl-3 xl:pl-3 h-12' %>
+    </a>
+    <div class="flex md:order-2 space-x-3 md:space-x-0 rtl:space-x-reverse w-[15%]">
+        <div class="hidden lg:block">
+          <i class="fa-brands fa-facebook mx-2 text-[24px] text-white"></i>
+          <i class="fa-brands fa-instagram mx-2 text-[24px] text-white"></i>
+          <i class="fa-brands fa-x-twitter mx-2 text-[24px] text-white"></i>
+        </div>
+        <button data-collapse-toggle="navbar-sticky" type="button" class="inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-gray-500 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600" aria-controls="navbar-sticky" aria-expanded="false">
+          <span class="sr-only">Open main menu</span>
+          <svg class="w-5 h-5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 17 14">
+              <path stroke="#ffffff" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M1 1h15M1 7h15M1 13h15"/>
+          </svg>
+      </button>
+    </div>
+    <div class="items-center justify-between hidden w-full md:flex md:w-auto md:order-1" id="navbar-sticky">
+      <ul class="flex flex-col p-4 md:p-0 mt-4 font-medium border rounded-lg md:space-x-8 rtl:space-x-reverse md:flex-row md:mt-0 md:border-0 bg-white lg:bg-transparent">
+          <li><a href="#" class="nav-link text-dark-custom lg:text-white mx-3 uppercase font-bold">Home</a></li>
+          <li><a href="#" class="nav-link text-dark-custom lg:text-white mx-3 uppercase font-bold">My Results</a></li>
+          <li><a href="#" class="nav-link text-dark-custom lg:text-white mx-3 uppercase font-bold">Events</a></li>
+          <li><a href="#" class="nav-link text-dark-custom lg:text-white mx-3 uppercase font-bold">Services</a></li>
+          <li><a href="#" class="nav-link text-dark-custom lg:text-white mx-3 uppercase font-bold">News</a></li>
+          <li><a href="#" class="nav-link text-dark-custom lg:text-white mx-3 uppercase font-bold">Where to Stay</a></li>
+          <li><a href="#" class="nav-link text-dark-custom lg:text-white mx-3 uppercase font-bold">Contact Us</a></li>
+          <li class="flex flex-row">
+            <i class="fa-brands fa-facebook mx-2 text-[24px] text-white"></i>
+            <i class="fa-brands fa-instagram mx-2 text-[24px] text-white"></i>
+            <i class="fa-brands fa-x-twitter mx-2 text-[24px] text-white"></i>
+          </li>
+      </ul>
+    </div>
+  </div>
+</nav>
 
+
+<!-- Toggle Script -->
+<script>
+  const toggler = document.getElementById('navbar-toggler');
+  const menu = document.getElementById('navbar-menu');
+  
+  toggler.addEventListener('click', () => {
+    menu.classList.toggle('hidden');
+  });
+</script>
+
+
+<!-- Banner Section -->
 <div class="relative h-[90vh]">
     <%= image_tag 'event-banner.jpg', class: 'w-full h-full object-cover absolute z-1' %>
     <div class="container mx-auto h-full px-5">
@@ -878,6 +926,359 @@
     </div>
   </div>
 </div>
+
+<!-- Event Result Banner -->
+<div>
+    <!-- Desktop background banner (xl+) -->
+    <div class="relative hidden xl:block h-[35vh]">
+      <%= image_tag 'Rectangle_121.jpg', class: 'w-full h-full object-cover absolute top-0 -z-10' %>
+    </div>
+
+    <!-- Centered image section -->
+    <div class="relative flex justify-center items-center">
+      
+      <!-- Desktop (lg+) image -->
+      <div class="hidden lg:flex justify-center items-center w-full absolute">
+        <div class="w-7/12 flex justify-center items-center">
+          <div class="rounded-2xl overflow-hidden w-full">
+            <%= image_tag 'Image_15.jpg', class: 'w-full' %>
+          </div>
+        </div>
+      </div>
+
+      <!-- Mobile (below lg) image -->
+      <div class="flex lg:hidden justify-center items-center w-full px-3">
+        <div class="rounded-2xl overflow-hidden w-full">
+          <%= image_tag 'Image_15.jpg', class: 'w-full' %>
+        </div>
+      </div>
+
+    </div>
+
+    <!-- Spacer below banner (lg+) -->
+    <div class="hidden lg:block h-[25vh]"></div>
+</div>
+
+<!-- Event Results -->
+<div class="py-10">
+  <!-- Buttons -->
+  <div class="w-full flex justify-center py-3 lg:pb-5 flex-wrap gap-3">
+    <button type="submit" class="btn-dark-solid px-4 py-2 rounded-full uppercase h-[60px] w-[75%] lg:w-[180px] mt-3 lg:mt-0">
+      Results
+    </button>
+    <button type="submit" class="btn-dark-outline px-4 py-2 rounded-full uppercase h-[60px] w-[75%] lg:w-[180px] mt-3 lg:mt-0">
+      Details
+    </button>
+  </div>
+
+  <!-- Heading and Search -->
+  <div class="flex justify-center mb-3 mt-5 px-3">
+    <div class="w-full lg:w-7/12">
+      <div class="flex flex-wrap lg:flex-nowrap">
+        <div class="w-full lg:w-9/12">
+          <h3 class="font-semibold lg:font-bold text-2xl">
+            Bank Windhook Red Run 2025
+          </h3>
+        </div>
+        <div class="w-full lg:w-3/12">
+          <div class="relative hidden xl:flex w-full">
+            <input type="email" placeholder="Search" class="form-input rounded-full bg-transparent border border-gray-300 text-black uppercase pl-4 pr-12 h-10 w-full">
+            <i class="fa-solid fa-magnifying-glass absolute right-4 top-1/2 -translate-y-1/2 text-gray-800"></i>
+          </div>
+        </div>
+      </div>
+
+      <!-- Filters -->
+      <div class="flex flex-wrap my-3">
+        <nav class="w-full">
+          <div class="flex justify-between items-center xl:hidden mb-3">
+            <div class="relative w-full">
+              <input type="email" placeholder="Search" class="form-input rounded-full bg-transparent border border-gray-300 text-black uppercase pl-4 pr-12 h-10">
+              <i class="fa-solid fa-magnifying-glass absolute right-4 top-1/2 -translate-y-1/2 text-gray-800"></i>
+            </div>
+            <button class="bg-red-600 py-2 rounded-full w-20 flex justify-center items-center">
+              <i class="fa-solid fa-filter text-white"></i>
+            </button>
+          </div>
+          <div class="flex flex-row justify-between">
+            <div class="hidden xl:flex justify-evenly flex-wrap gap-2 w-[25%]">
+              <a href="#" class="bg-red-dark text-white px-4 py-2 rounded-full font-medium text-center">21KM</a>
+              <a href="#" class="text-black px-4 py-2 rounded-full font-medium text-center">50KM</a>
+              <a href="#" class="text-black px-4 py-2 rounded-full font-medium text-center">100KM</a>
+            </div>
+
+            <div class="my-1 w-[5%] flex justify-center">
+              <div class="border-e border-gray-300 h-full">
+              </div>
+            </div>
+
+            <div class="flex flex-wrap justify-start xl:justify-evenly gap-2 w-[70%]">
+              <a href="#" class="bg-red-dark text-white px-4 py-2 rounded-full font-medium text-center uppercase">All results</a>
+              <a href="#" class="text-black px-4 py-2 rounded-full font-medium text-center uppercase">Category results</a>
+              <a href="#" class="text-black px-4 py-2 rounded-full font-medium text-center uppercase">Gender Results</a>
+              <a href="#" class="text-black px-4 py-2 rounded-full font-medium text-center uppercase">Advanced</a>
+            </div>
+          </div>
+        </nav>
+      </div>
+
+      <!-- Table -->
+      <div class="rounded-2xl overflow-x-auto border border-gray-300 mb-5">
+        <table class="w-full text-sm" cellpadding="8" cellspacing="0">
+          <thead class="bg-red-600 text-white">
+            <tr>
+              <th class="text-center px-2 py-1">Pos</th>
+              <th class="text-center px-2 py-1">Race No</th>
+              <th class="px-2 py-1">Name</th>
+              <th class="text-center px-2 py-1">Time</th>
+              <th class="text-center px-2 py-1">Category</th>
+              <th class="text-center px-2 py-1">Cat Pos</th>
+              <th class="text-center px-2 py-1">Gender</th>
+              <th class="text-center px-2 py-1">Gen Pos</th>
+              <th class="text-center px-2 py-1"></th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr class="border-t border-gray-300">
+              <td class="text-center px-2 py-1">1</td>
+              <td class="text-center px-2 py-1">2288</td>
+              <td class="px-2 py-1"><a href="#" class="underline text-blue-600">Julian FRYMAN</a></td>
+              <td class="text-center px-2 py-1">1:13:08</td>
+              <td class="text-center px-2 py-1">Open(20-39yrs)</td>
+              <td class="text-center px-2 py-1">1</td>
+              <td class="text-center px-2 py-1">Male</td>
+              <td class="text-center px-2 py-1">1</td>
+              <td class="text-center px-2 py-1 flex justify-center items-center">
+                <input type="checkbox" class="h-5 w-5">
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+
+    </div>
+  </div>
+</div>
+
+<!-- Event Details -->
+<div>
+  <!-- Buttons -->
+  <div class="w-full flex justify-center pb-3 lg:pb-5 flex-wrap gap-3">
+    <button type="submit" class="btn-dark-solid px-4 py-2 rounded-full uppercase h-[60px] w-[75%] lg:w-[180px] mt-3 lg:mt-0">
+      Results
+    </button>
+    <button type="submit" class="btn-dark-outline px-4 py-2 rounded-full uppercase h-[60px] w-[75%] lg:w-[180px] mt-3 lg:mt-0">
+      Details
+    </button>
+  </div>
+
+  <!-- Heading and Search -->
+  <div class="flex justify-center mb-3 px-3">
+    <div class="w-full lg:w-7/12">
+      <div class="flex flex-wrap lg:flex-nowrap">
+        <div class="w-full lg:w-9/12">
+          <h3 class="font-semibold lg:font-bold text-2xl">
+            Bank Windhook Red Run 2025
+          </h3>
+        </div>
+        <div class="w-full lg:w-3/12">
+          <div class="relative flex w-full">
+            <input type="email" placeholder="Search" class="form-input rounded-full bg-transparent border border-gray-300 text-black uppercase pl-4 pr-12 h-10 w-full">
+            <i class="fa-solid fa-magnifying-glass absolute right-4 top-1/2 -translate-y-1/2 text-gray-800 hidden md:flex items-center"></i>
+          </div>
+        </div>
+      </div>
+
+      <!-- Filter Buttons -->
+      <div class="w-full flex flex-wrap my-3 justify-evenly lg:justify-start gap-2">
+        <a href="#" class="bg-red-dark text-white px-4 py-2 rounded-full font-medium text-center">
+          <p class="mb-0">21KM</p>
+        </a>
+        <a href="#" class="text-black px-4 py-2 rounded-full font-medium text-center">
+          <p class="mb-0">50KM</p>
+        </a>
+        <a href="#" class="text-black px-4 py-2 rounded-full font-medium text-center">
+          <p class="mb-0">100KM</p>
+        </a>
+      </div>
+
+      <!-- Tables Row -->
+      <div class="flex flex-wrap -mx-2">
+        <!-- Left Table -->
+        <div class="w-full lg:w-1/3 px-2 mb-5">
+          <div class="rounded-2xl overflow-x-auto border border-gray-300">
+            <table class="w-full text-sm" cellpadding="8" cellspacing="0">
+              <thead class="bg-red-600 text-white">
+                <tr>
+                  <th class="text-center px-2 py-1">Gender</th>
+                  <th class="text-center px-2 py-1">Entered</th>
+                  <th class="text-center px-2 py-1">Finishers</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr class="border-t border-gray-300">
+                  <td class="text-center px-2 py-1">Female</td>
+                  <td class="text-center px-2 py-1">2288</td>
+                  <td class="text-center px-2 py-1">2000</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+
+        <!-- Right Table -->
+        <div class="w-full lg:w-2/3 px-2 mb-5">
+          <div class="rounded-2xl overflow-x-auto border border-gray-300">
+            <table class="w-full text-sm" cellpadding="8" cellspacing="0">
+              <thead class="bg-red-600 text-white">
+                <tr>
+                  <th class="text-center px-2 py-1">Gender</th>
+                  <th class="text-center px-2 py-1">Category</th>
+                  <th class="text-center px-2 py-1">Entered</th>
+                  <th class="text-center px-2 py-1">Finishers</th>
+                  <th class="text-center px-2 py-1">Fastest Time</th>
+                  <th class="text-center px-2 py-1">Average Time</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr class="border-t border-gray-300">
+                  <td class="text-center px-2 py-1">Female</td>
+                  <td class="text-center px-2 py-1">Junior</td>
+                  <td class="px-2 py-1">1</td>
+                  <td class="text-center px-2 py-1">1</td>
+                  <td class="text-center px-2 py-1">1:30:22</td>
+                  <td class="text-center px-2 py-1">1:45:22</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</div>
+
+<!-- Event Racer Time Details -->
+<div class="mb-5 py-10">
+  <!-- Buttons -->
+  <div class="w-full flex justify-center pb-3 lg:pb-5 flex-wrap gap-3">
+    <button type="submit" class="btn-dark-solid px-4 py-2 rounded-full uppercase h-[60px] w-[75%] lg:w-[180px] mt-3 lg:mt-0">
+      Results
+    </button>
+    <button type="submit" class="btn-dark-outline px-4 py-2 rounded-full uppercase h-[60px] w-[75%] lg:w-[180px] mt-3 lg:mt-0">
+      Details
+    </button>
+  </div>
+
+  <!-- Heading and Search -->
+  <div class="flex justify-center mb-3 px-3">
+    <div class="w-full lg:w-7/12">
+      <div class="flex flex-wrap lg:flex-nowrap mb-3">
+        <div class="w-full lg:w-9/12">
+          <h3 class="font-semibold lg:font-bold text-2xl">
+            Bank Windhook Red Run 2025
+          </h3>
+        </div>
+        <div class="w-full lg:w-3/12">
+          <div class="relative flex">
+            <input type="email" placeholder="Search" class="form-input rounded-full bg-transparent border border-gray-300 text-black uppercase pl-4 pr-12 h-10">
+            <i class="fa-solid fa-magnifying-glass absolute right-4 top-1/2 -translate-y-1/2 text-gray-800 hidden md:flex items-center"></i>
+          </div>
+        </div>
+      </div>
+
+      <!-- Main Card Row -->
+      <div class="flex flex-wrap mb-4 -mx-2">
+        <!-- Left Card -->
+        <div class="w-full lg:w-2/3 px-2 mb-3 lg:mb-0">
+          <div class="overflow-x-auto border border-gray-300 rounded-2xl">
+            <!-- Header -->
+            <div class="w-full bg-red-600 px-4 pt-4 pb-2 h-20">
+              <h3 class="text-white">
+                <span class="font-semibold text-[32px]">Julian FRYMAN</span>
+                <span class="font-light text-[32px]">#2288</span>
+              </h3>
+            </div>
+            <!-- Body -->
+            <div class="px-4 py-3 grid grid-cols-1 xl:grid-cols-12 gap-4">
+              <!-- Stats -->
+              <div class="xl:col-span-5 lg:border-r lg:border-gray-300 pr-4">
+                <h5 class="text-start font-semibold uppercase text-[23px] mb-2">Net Time: 01:11:30</h5>
+                <p class="mb-2 text-sm font-medium">Position: <span class="font-semibold">1/279</span></p>
+                <p class="mb-2 text-sm font-medium">Category Position: <span class="font-semibold">1/87</span></p>
+                <p class="mb-2 text-sm font-medium">Gender Position: <span class="font-semibold">1/146</span></p>
+              </div>
+              <!-- Info -->
+              <div class="xl:col-span-7">
+                <h5 class="text-start font-semibold uppercase text-[23px] mb-2">Information</h5>
+                <div class="grid grid-cols-1 xl:grid-cols-12 gap-2">
+                  <div class="xl:col-span-7">
+                    <p class="mb-2 text-sm font-medium">Gender: <span class="font-semibold">Male</span></p>
+                    <p class="mb-2 text-sm font-medium">Category: <span class="font-semibold">Open(20-39yrs)</span></p>
+                    <p class="mb-2 text-sm font-medium">Status: <span class="font-semibold">Finished</span></p>
+                  </div>
+                  <div class="xl:col-span-5">
+                    <p class="mb-2 text-sm font-medium">Club: <span class="font-semibold">Male</span></p>
+                    <p class="mb-2 text-sm font-medium">Distance: <span class="font-semibold">21km</span></p>
+                    <p class="mb-2 text-sm font-medium">Date: <span class="font-semibold">14 July 2025</span></p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Right Card (Leg Times) -->
+        <div class="w-full lg:w-1/3 px-2 flex">
+          <div class="overflow-x-auto border border-gray-300 rounded-2xl flex-grow">
+            <!-- Header -->
+            <div class="w-full bg-red-600 px-4 pt-4 pb-2 grid grid-cols-12 text-white mb-3 h-20">
+              <div class="col-span-5 flex items-center"><p class="font-semibold text-sm mb-0">Name</p></div>
+              <div class="col-span-3 flex items-center"><p class="font-semibold text-sm mb-0">Time</p></div>
+              <div class="col-span-4 flex items-center"><p class="font-semibold text-sm mb-0">Leg Time</p></div>
+            </div>
+            <!-- Rows -->
+            <div class="px-4 pt-2 grid grid-cols-12 gap-0">
+              <div class="col-span-5"><p class="text-sm font-medium mb-0">5km</p></div>
+              <div class="col-span-3"><p class="text-sm font-medium mb-0">00:18:52</p></div>
+              <div class="col-span-4"><p class="text-sm font-medium mb-0">00:18:52</p></div>
+            </div>
+            <div class="px-4 pt-2 grid grid-cols-12 gap-0">
+              <div class="col-span-5"><p class="text-sm font-medium mb-0">5km</p></div>
+              <div class="col-span-3"><p class="text-sm font-medium mb-0">00:18:52</p></div>
+              <div class="col-span-4"><p class="text-sm font-medium mb-0">00:18:52</p></div>
+            </div>
+            <div class="px-4 pt-2 grid grid-cols-12 gap-0">
+              <div class="col-span-5"><p class="text-sm font-medium mb-0">5km</p></div>
+              <div class="col-span-3"><p class="text-sm font-medium mb-0">00:18:52</p></div>
+              <div class="col-span-4"><p class="text-sm font-medium mb-0">00:18:52</p></div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Actions -->
+      <div class="flex flex-col lg:flex-row items-center gap-3">
+        <a href="#" class="bg-red-dark rounded-full flex items-center px-4 py-2 text-white uppercase">
+          <i class="fa-solid fa-star mr-2 text-sm"></i>
+          <p class="mb-0 text-sm">Add To Favorites</p>
+        </a>
+        <div class="flex items-center lg:pl-3 gap-2">
+          <p class="font-light mb-0">Share:</p>
+          <a href="#" class="text-gray-800"><i class="fa-brands fa-facebook"></i></a>
+          <a href="#" class="text-gray-800"><i class="fa-brands fa-instagram"></i></a>
+          <a href="#" class="text-gray-800"><i class="fa-brands fa-x-twitter"></i></a>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</div>
+
+
+
+
 
 
 

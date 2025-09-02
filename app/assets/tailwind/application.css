@@ -11,6 +11,8 @@
     --color-light-grey: oklch(0.9642 0 0);
     --color-light-blue: oklch(0.8095 0.1109 210.77);
     --color-dark-custom: oklch(0.1743 0.0412 276.93);
+    --color-red-dark: oklch(0.49 0.1781 27.94);
+    --color-red-medium: oklch(0.5776 0.2226 26.96);
 }
 
 body {
@@ -29,6 +31,29 @@ body {
 .background-card-underlay {
     width: 70%;
     aspect-ratio: 1;
+}
+
+.star {
+  visibility: hidden;
+  font-size: 30px;
+  cursor: pointer;
+  position: relative; /* so background applies correctly */
+  width: 1em;
+  height: 1em;
+}
+
+.star:before {
+  content: "\2606"; /* outline star */
+  position: absolute;
+  visibility: visible;
+  color: #1b56ce
+}
+
+.star:checked:before {
+  content: "\2605"; /* filled star */
+  color: #1b56ce; /* star (outline/fill) color */
+  border-radius: 4px; /* optional rounded bg */
+  padding: 2px; /* so background shows around star */
 }
 
 @layer utilities {
@@ -73,5 +98,8 @@ body {
         @apply border border-dark-custom bg-white font-bold text-dark-custom rounded-full
     }
 }
+
+
+
 
 
