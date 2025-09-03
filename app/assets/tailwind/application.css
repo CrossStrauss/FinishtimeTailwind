@@ -34,26 +34,27 @@ body {
 }
 
 .star {
-  visibility: hidden;
-  font-size: 30px;
-  cursor: pointer;
-  position: relative; /* so background applies correctly */
-  width: 1em;
-  height: 1em;
+    visibility: hidden;
+    font-size: 30px;
+    cursor: pointer;
+    position: relative; /* so background applies correctly */
+    width: 1em;
+    height: 1em;
 }
 
 .star:before {
-  content: "\2606"; /* outline star */
-  position: absolute;
-  visibility: visible;
-  color: #1b56ce
+    transform: translateY(-20%);
+    content: "\2606"; /* outline star */
+    position: absolute;
+    visibility: visible;
+    color: #1b56ce
 }
 
 .star:checked:before {
-  content: "\2605"; /* filled star */
-  color: #1b56ce; /* star (outline/fill) color */
-  border-radius: 4px; /* optional rounded bg */
-  padding: 2px; /* so background shows around star */
+    content: "\2605"; /* filled star */
+    color: #1b56ce; /* star (outline/fill) color */
+    border-radius: 4px; /* optional rounded bg */
+    padding: 2px; /* so background shows around star */
 }
 
 @layer utilities {
