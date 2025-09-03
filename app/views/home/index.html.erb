@@ -3,21 +3,21 @@
     <a href="#" class="flex items-center space-x-3 rtl:space-x-reverse">
          <%= image_tag 'easyreg_logo_cropped.png', class: 'pl-3 xl:pl-3 h-12' %>
     </a>
-    <div class="flex md:order-2 space-x-3 md:space-x-0 rtl:space-x-reverse w-[15%]">
+    <div class="flex lg:order-2 space-x-3 lg:space-x-0 rtl:space-x-reverse w-[15%]">
         <div class="hidden lg:block">
           <i class="fa-brands fa-facebook mx-2 text-[24px] text-white"></i>
           <i class="fa-brands fa-instagram mx-2 text-[24px] text-white"></i>
           <i class="fa-brands fa-x-twitter mx-2 text-[24px] text-white"></i>
         </div>
-        <button data-collapse-toggle="navbar-sticky" type="button" class="inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-gray-500 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600" aria-controls="navbar-sticky" aria-expanded="false">
+        <button data-collapse-toggle="navbar-sticky" type="button" class="inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-gray-500 rounded-lg lg:hidden" aria-controls="navbar-sticky" aria-expanded="false">
           <span class="sr-only">Open main menu</span>
           <svg class="w-5 h-5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 17 14">
               <path stroke="#ffffff" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M1 1h15M1 7h15M1 13h15"/>
           </svg>
       </button>
     </div>
-    <div class="items-center justify-between hidden w-full md:flex md:w-auto md:order-1" id="navbar-sticky">
-      <ul class="flex flex-col p-4 md:p-0 mt-4 font-medium border rounded-lg md:space-x-8 rtl:space-x-reverse md:flex-row md:mt-0 md:border-0 bg-white lg:bg-transparent">
+    <div class="items-center justify-between hidden w-full lg:flex lg:w-auto lg:order-1" id="navbar-sticky">
+      <ul class="flex flex-col p-4 lg:p-0 mt-4 font-medium border rounded-lg lg:space-x-8 rtl:space-x-reverse lg:flex-row lg:mt-0 lg:border-0 bg-white lg:bg-transparent">
           <li><a href="#" class="nav-link text-dark-custom lg:text-white mx-3 uppercase font-bold">Home</a></li>
           <li><a href="#" class="nav-link text-dark-custom lg:text-white mx-3 uppercase font-bold">My Results</a></li>
           <li><a href="#" class="nav-link text-dark-custom lg:text-white mx-3 uppercase font-bold">Events</a></li>
@@ -86,16 +86,16 @@
 </div>
 
 <!-- Card Section -->
-<div class="container mx-auto px-3 lg:px-0 py-12">
+<div class="container mx-auto px-3 md:px-6 lg:px-0 py-12">
   <!-- Header Row -->
   <div class="grid grid-cols-1 md:grid-cols-12 items-center">
     <div class="col-span-12 md:col-span-8 xl:col-span-10">
       <p
-        class="uppercase text-center lg:text-left font-semibold tracking-wide mb-0 text-[15px] lg:text-[20px] text-primary-blue"
+        class="uppercase text-center md:text-left font-semibold tracking-wide mb-0 text-[15px] lg:text-[20px] text-primary-blue"
       >
         Race Results
       </p>
-      <h2 class="uppercase text-center md:text-left font-extrabold text-[30px] md:text-[55px]">
+      <h2 class="uppercase text-center md:text-left font-extrabold text-[30px] lg:text-[55px]">
         Recent Results
       </h2>
     </div>
@@ -114,10 +114,10 @@
   <!-- Cards Grid -->
   <div class="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-3 mt-6">
     <!-- Card -->
-    <div class="rounded-xl lg:rounded-3xl overflow-hidden bg-light-grey">
+    <div class="rounded-lg lg:rounded-lg overflow-hidden bg-light-grey">
         <a href="#" class="no-underline text-black">
             <div
-            class="flex flex-row rounded-xl lg:rounded-3xl border border-gray-200 overflow-hidden"
+            class="flex flex-row rounded-lg lg:rounded-lg border border-gray-200 overflow-hidden"
             >
             <div class="flex-shrink-0">
                 <%= image_tag 'download.jpeg', class: 'h-full size-[80px] lg:size-[100px] object-cover' %>
@@ -139,10 +139,10 @@
         </a>
     </div>
 
-    <div class="rounded-xl lg:rounded-3xl overflow-hidden bg-light-grey">
+    <div class="rounded-lg lg:rounded-lg overflow-hidden bg-light-grey">
         <a href="#" class="no-underline text-black">
             <div
-            class="flex flex-row rounded-xl lg:rounded-3xl border border-gray-200 overflow-hidden"
+            class="flex flex-row rounded-lg lg:rounded-lg border border-gray-200 overflow-hidden"
             >
             <div class="flex-shrink-0">
                 <%= image_tag 'download.jpeg', class: 'h-full size-[80px] lg:size-[100px] object-cover' %>
@@ -164,10 +164,10 @@
         </a>
     </div>
 
-    <div class="rounded-xl lg:rounded-3xl overflow-hidden bg-light-grey">
+    <div class="rounded-lg lg:rounded-lg overflow-hidden bg-light-grey">
         <a href="#" class="no-underline text-black">
             <div
-            class="flex flex-row rounded-xl lg:rounded-3xl border border-gray-200 overflow-hidden"
+            class="flex flex-row rounded-lg lg:rounded-lg border border-gray-200 overflow-hidden"
             >
             <div class="flex-shrink-0">
                 <%= image_tag 'download.jpeg', class: 'h-full size-[80px] lg:size-[100px] object-cover' %>
@@ -189,10 +189,10 @@
         </a>
     </div>
 
-    <div class="rounded-xl lg:rounded-3xl overflow-hidden bg-light-grey">
+    <div class="rounded-lg lg:rounded-lg overflow-hidden bg-light-grey">
         <a href="#" class="no-underline text-black">
             <div
-            class="flex flex-row rounded-xl lg:rounded-3xl border border-gray-200 overflow-hidden"
+            class="flex flex-row rounded-lg lg:rounded-lg border border-gray-200 overflow-hidden"
             >
             <div class="flex-shrink-0">
                 <%= image_tag 'download.jpeg', class: 'h-full size-[80px] lg:size-[100px] object-cover' %>
@@ -214,10 +214,10 @@
         </a>
     </div>
 
-    <div class="rounded-xl lg:rounded-3xl overflow-hidden bg-light-grey">
+    <div class="rounded-lg lg:rounded-lg overflow-hidden bg-light-grey">
         <a href="#" class="no-underline text-black">
             <div
-            class="flex flex-row rounded-xl lg:rounded-3xl border border-gray-200 overflow-hidden"
+            class="flex flex-row rounded-lg lg:rounded-lg border border-gray-200 overflow-hidden"
             >
             <div class="flex-shrink-0">
                 <%= image_tag 'download.jpeg', class: 'h-full size-[80px] lg:size-[100px] object-cover' %>
@@ -239,10 +239,10 @@
         </a>
     </div>
 
-    <div class="rounded-xl lg:rounded-3xl overflow-hidden bg-light-grey">
+    <div class="rounded-lg lg:rounded-lg overflow-hidden bg-light-grey">
         <a href="#" class="no-underline text-black">
             <div
-            class="flex flex-row rounded-xl lg:rounded-3xl border border-gray-200 overflow-hidden"
+            class="flex flex-row rounded-lg lg:rounded-lg border border-gray-200 overflow-hidden"
             >
             <div class="flex-shrink-0">
                 <%= image_tag 'download.jpeg', class: 'h-full size-[80px] lg:size-[100px] object-cover' %>
@@ -328,7 +328,7 @@
 </div>
 
 <!-- Upcoming events -->
-<div class="container mx-auto px-3 lg:px-0 py-12 ">
+<div class="container mx-auto px-3 md:px-6 lg:px-0 py-12 lg:py-30 ">
   <!-- Header Row -->
   <div class="grid grid-cols-1 md:grid-cols-12 gap-6">
     <div class="col-span-12 md:col-span-8 xl:col-span-9">
@@ -352,7 +352,7 @@
   <!-- Events Grid -->
   <div class="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-4 gap-4 mt-6 lg:mt-10">
     <!-- Event Card -->
-    <div class="rounded-2xl overflow-hidden relative bg-light-grey border border-gray-200">
+    <div class="rounded-lg overflow-hidden relative bg-light-grey border border-gray-200">
       <a href="#" class="no-underline text-gray-900 block">
         <!-- Small Logo Overlay -->
         <div class="absolute top-3 left-3 bg-white rounded-md z-10 overflow-hidden w-12 h-12">
@@ -376,7 +376,7 @@
       </a>
     </div>
 
-    <div class="rounded-2xl overflow-hidden relative bg-light-grey border border-gray-200">
+    <div class="rounded-lg overflow-hidden relative bg-light-grey border border-gray-200">
       <a href="#" class="no-underline text-gray-900 block">
         <!-- Small Logo Overlay -->
         <div class="absolute top-3 left-3 bg-white rounded-md z-10 overflow-hidden w-12 h-12">
@@ -400,7 +400,7 @@
       </a>
     </div>
 
-    <div class="rounded-2xl overflow-hidden relative bg-light-grey border border-gray-200">
+    <div class="rounded-lg overflow-hidden relative bg-light-grey border border-gray-200">
       <a href="#" class="no-underline text-gray-900 block">
         <!-- Small Logo Overlay -->
         <div class="absolute top-3 left-3 bg-white rounded-md z-10 overflow-hidden w-12 h-12">
@@ -424,7 +424,7 @@
       </a>
     </div>
 
-    <div class="rounded-2xl overflow-hidden relative bg-light-grey border border-gray-200">
+    <div class="rounded-lg overflow-hidden relative bg-light-grey border border-gray-200">
       <a href="#" class="no-underline text-gray-900 block">
         <!-- Small Logo Overlay -->
         <div class="absolute top-3 left-3 bg-white rounded-md z-10 overflow-hidden w-12 h-12">
@@ -461,7 +461,7 @@
   <%= image_tag 'home-banner.jpg', class: 'absolute inset-0 w-full h-full object-cover -z-10' %>
 
   <!-- Content -->
-  <div class="container mx-auto px-3 lg:px-0 py-12 items-center">
+  <div class="container mx-auto px-3 md:px-6 lg:px-0 py-12 items-center">
     <div class="h-full items-center w-[100%] lg:w-[45%] flex items-center">
       
       <div class="flex flex-col">
@@ -492,17 +492,59 @@
   </div>
 </div>
 
-<!-- About Us -->
+<!-- About Us Image Left -->
 <div class="container mx-auto px-3 lg:px-0 py-15 lg:py-30 items-center">
     <div class="grid grid-cols-2 lg:flex-row pt-5 gap-7">
         <div class="hidden lg:flex pr-5 justify-end items-center">
-            <div class="relative">
+            <div class="relative ps-10">
                 <div class="absolute bg-black rounded-3xl z-0 background-card-underlay underlay-offset"></div>
                 <%= image_tag 'download_3.jpg', class: 'relative rounded-3xl object-cover h-[85%] z-10' %>
             </div>
         </div>
 
         <div class="w-full my-auto col-span-2 lg:col-span-1 px-3 lg:px-0">
+            <p class="uppercase text-center lg:text-left font-semibold tracking-wide mb-0 text-[15px] lg:text-[20px] text-primary-blue">
+                About Us
+            </p>
+            <h2 class="text-center lg:text-left font-extrabold uppercase mb-4 text-[30px] lg:text-[55px] lg:leading-20">
+                Lorem Ipsum Dolor Set Amet
+            </h2>
+
+            <p class="text-center lg:text-left text-base font-medium mt-4 mb-0">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis
+                nostrud exercitation ullamco laboris
+            </p>
+
+            <p class="text-center lg:text-left text-base mt-3 lg:mt-4 mb-0 font-light text-gray-600">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis
+                nostrud exercitation ullamco laboris
+            </p>
+
+            <div class="w-full mt-6 flex flex-col lg:flex-row items-center lg:items-start">
+                <button
+                type="button"
+                class="uppercase btn-blue-solid h-[60px] w-[75%] lg:w-[220px] mt-3 lg:mt-0"
+                >
+                Contact Us
+                </button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- About Us Image right -->
+<div class="container mx-auto px-3 lg:px-0 py-15 lg:py-30 items-center">
+    <div class="grid grid-cols-2 lg:flex-row pt-5 gap-7">
+        <div class="hidden lg:flex pr-5 justify-end items-center order-2">
+            <div class="relative">
+                <div class="absolute bg-black rounded-3xl z-0 background-card-underlay underlay-offset"></div>
+                <%= image_tag 'download_3.jpg', class: 'relative rounded-3xl object-cover h-[85%] z-10' %>
+            </div>
+        </div>
+
+        <div class="w-full my-auto col-span-2 lg:col-span-1 px-3 lg:px-0 order-1">
             <p class="uppercase text-center lg:text-left font-semibold tracking-wide mb-0 text-[15px] lg:text-[20px] text-primary-blue">
                 About Us
             </p>
@@ -557,7 +599,7 @@
 </div>
 
 <!-- Our Services cards -->
-<div class="container mx-auto px-3 lg:px-0 py-15 lg:py-30 items-center">
+<div class="container mx-auto px-3 md:px-6 lg:px-0 py-12 lg:py-30 items-center">
     <!-- Section Header -->
     <div class="flex justify-center">
         <div class="w-1/2 text-center">
@@ -570,68 +612,57 @@
         </div>
     </div>
 
-    <!-- Cards Grid -->
-    <div class="mt-6 grid grid-cols-1 md:grid-cols-2 gap-4">
+    <div class="lg:mt-6 grid grid-cols-1 lg:grid-cols-2 gap-4">
         
-        <!-- Card 1 -->
-        <div class="flex rounded-3xl border border-gray-200 overflow-hidden bg-light-grey">
-            <!-- Left Content -->
-            <div class="w-[80%] lg:w-[75%] flex flex-col justify-center items-start ps-6 lg:px-6 py-6">
-                <h5 class="mb-2 font-medium text-[16px] lg:text-[20px]">
-                    Timekeeping & Results
-                </h5>
-                <p class="text-gray-600 text-sm">
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, illo ullam qui exercitationem itaque excepturi
-                </p>
-            </div>
-            <!-- Right Icon -->
-            <div class="w-[20%] lg:w-[25%] flex justify-center items-center bg-light-grey">
-                <div class="rounded-md flex justify-center items-center w-[60%] lg:w-[50%] aspect-square bg-white p-3 border-1 border-primary-blue">
-                    <i class="fa-solid fa-stopwatch text-primary-blue text-[30px] lg:text-[45px]"></i>
-                </div>
-            </div>
-        </div>
+      <div class="flex rounded-lg border border-gray-200 overflow-hidden bg-light-grey">
+          <div class="w-[75%] flex flex-col justify-center items-start ps-3 py-3 lg:px-6 lg:py-6">
+              <h5 class="mb-2 font-medium text-[16px] lg:text-[20px]">
+                  Timekeeping & Results
+              </h5>
+              <p class="text-gray-600 text-sm text-ellipsis text-nowrap lg:text-wrap">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, illo ullam qui exercitationem itaque excepturi
+              </p>
+          </div>
+          <div class="w-[25%] flex justify-end items-center bg-light-grey pe-3 md:p-3 lg:pe-6">
+              <div class="rounded-md flex justify-center items-center w-[60%] lg:w-[50%] aspect-square bg-white p-3 border-1 border-primary-blue">
+                  <i class="fa-solid fa-stopwatch text-primary-blue text-[30px] md:text-[35px] lg:text-[45px]"></i>
+              </div>
+          </div>
+      </div>
 
-         <div class="flex rounded-3xl border border-gray-200 overflow-hidden bg-light-grey">
-            <!-- Left Content -->
-            <div class="w-[80%] lg:w-[75%] flex flex-col justify-center items-start ps-6 lg:px-6 py-6">
-                <h5 class="mb-2 font-medium text-[16px] lg:text-[20px]">
-                    Timekeeping & Results
-                </h5>
-                <p class="text-gray-600 text-sm">
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, illo ullam qui exercitationem itaque excepturi
-                </p>
-            </div>
-            <!-- Right Icon -->
-            <div class="w-[20%] lg:w-[25%] flex justify-center items-center bg-light-grey">
-                <div class="rounded-md flex justify-center items-center w-[60%] lg:w-[50%] aspect-square bg-white p-3 border-1 border-primary-blue">
-                    <i class="fa-solid fa-stopwatch text-primary-blue text-[30px] lg:text-[45px]"></i>
-                </div>
-            </div>
-        </div>
+      <div class="flex rounded-lg border border-gray-200 overflow-hidden bg-light-grey">
+          <div class="w-[75%] flex flex-col justify-center items-start ps-3 py-3 lg:px-6 lg:py-6">
+              <h5 class="mb-2 font-medium text-[16px] lg:text-[20px]">
+                  Timekeeping & Results
+              </h5>
+              <p class="text-gray-600 text-sm text-ellipsis text-nowrap lg:text-wrap">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, illo ullam qui exercitationem itaque excepturi
+              </p>
+          </div>
+          <div class="w-[25%] flex justify-end items-center bg-light-grey pe-3 md:p-3 lg:pe-6">
+              <div class="rounded-md flex justify-center items-center w-[60%] lg:w-[50%] aspect-square bg-white p-3 border-1 border-primary-blue">
+                  <i class="fa-solid fa-stopwatch text-primary-blue text-[30px] md:text-[35px] lg:text-[45px]"></i>
+              </div>
+          </div>
+      </div>
 
+      <div class="flex rounded-lg border border-gray-200 overflow-hidden bg-light-grey">
+          <div class="w-[75%] flex flex-col justify-center items-start ps-3 py-3 lg:px-6 lg:py-6">
+              <h5 class="mb-2 font-medium text-[16px] lg:text-[20px]">
+                  Timekeeping & Results
+              </h5>
+              <p class="text-gray-600 text-sm text-ellipsis text-nowrap lg:text-wrap">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, illo ullam qui exercitationem itaque excepturi
+              </p>
+          </div>
+          <div class="w-[25%] flex justify-end items-center bg-light-grey pe-3 md:p-3 lg:pe-6">
+              <div class="rounded-md flex justify-center items-center w-[60%] lg:w-[50%] aspect-square bg-white p-3 border-1 border-primary-blue">
+                  <i class="fa-solid fa-stopwatch text-primary-blue text-[30px] md:text-[35px] lg:text-[45px]"></i>
+              </div>
+          </div>
+      </div>
 
-         <div class="flex rounded-3xl border border-gray-200 overflow-hidden bg-light-grey">
-            <!-- Left Content -->
-            <div class="w-[80%] lg:w-[75%] flex flex-col justify-center items-start ps-6 lg:px-6 py-6">
-                <h5 class="mb-2 font-medium text-[16px] lg:text-[20px]">
-                    Timekeeping & Results
-                </h5>
-                <p class="text-gray-600 text-sm">
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, illo ullam qui exercitationem itaque excepturi
-                </p>
-            </div>
-            <!-- Right Icon -->
-            <div class="w-[20%] lg:w-[25%] flex justify-center items-center bg-light-grey">
-                <div class="rounded-md flex justify-center items-center w-[60%] lg:w-[50%] aspect-square bg-white p-3 border-1 border-primary-blue">
-                    <i class="fa-solid fa-stopwatch text-primary-blue text-[30px] lg:text-[45px]"></i>
-                </div>
-            </div>
-        </div>
-
-
-       
-
+        
     </div>
 </div>
 
@@ -693,11 +724,11 @@
 </div>
 
 <!-- Center Banner with Search-->
-<div class="relative h-[55vh]">
+<div class="relative h-[65vh] lg:h-[55vh]">
   <!-- Background image -->
   <%= image_tag 'Rectangle_121.jpg', class: 'absolute inset-0 w-full h-full object-cover -z-10' %>
-  <div class="h-full px-3 h-[55vh] py-5 lg:py-0 flex flex-col items-center justify-center mx-auto">
-    <div class="h-[55vh] py-5 lg:py-0 flex flex-col items-center justify-center w-full">
+  <div class="h-full px-3 h-[65vh] lg:h-[55vh] py-5 lg:py-0 flex flex-col items-center justify-center mx-auto">
+    <div class="h-[65vh] lg:h-[55vh] py-5 lg:py-0 flex flex-col items-center justify-center w-full">
       
       <!-- Text block -->
       <div class="flex flex-col items-center col-span-12 xl:col-span-7 px-3">
@@ -808,7 +839,7 @@
   <!-- Event Card -->
   <div class="flex justify-center mt-6">
     <div class="w-11/12 lg:w-10/12 rounded-xl overflow-hidden">
-      <div class="flex flex-col lg:flex-row rounded-xl lg:h-90">
+      <div class="flex flex-col lg:flex-row rounded-xl lg:h-90 mb-5">
         
         <div id="controls-carousel" class="relative w-full lg:w-[40%] h-50 lg:h-full" data-carousel="static">
             <!-- Carousel wrapper -->
@@ -870,30 +901,33 @@
 
 
         <!-- Right Content -->
-        <div class="w-full lg:w-7/12 py-2 lg:ps-10">
-          <p class="font-medium mb-0">
-            16 Aug 2027 - Nelson Mandela Bay Municipality
-          </p>
-          <h3 class="font-semibold text-[24px]">
-            Beer and Bagel Fun Run
-          </h3>
-          <p class="mb-4">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.
-          </p>
+        <div class="w-full lg:w-7/12 py-2 lg:ps-10 flex flex-wrap justify-between flex-col">
+          <div>
 
-          <!-- Info Rows -->
-          <div class="flex flex-col">
-            <div class="flex items-center mb-3">
-              <i class="fa-solid fa-user-group text-primary-blue text-xl me-3"></i>
-              <p class="font-medium mb-0">500 participants</p>
-            </div>
-            <div class="flex items-center mb-3">
-              <i class="fa-solid fa-person-running text-primary-blue text-xl me-3"></i>
-              <p class="font-medium mb-0">5Km</p>
-            </div>
-            <div class="flex items-center mb-3">
-              <i class="fa-solid fa-tag text-primary-blue text-xl me-3"></i>
-              <p class="font-medium mb-0">R100 - R500</p>
+            <p class="font-medium mb-0">
+              16 Aug 2027 - Nelson Mandela Bay Municipality
+            </p>
+            <h3 class="font-semibold text-[24px]">
+              Beer and Bagel Fun Run
+            </h3>
+            <p class="mb-4">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.
+            </p>
+
+            <!-- Info Rows -->
+            <div class="flex flex-col">
+              <div class="flex items-center mb-3">
+                <i class="fa-solid fa-user-group text-primary-blue text-xl me-3"></i>
+                <p class="font-medium mb-0">500 participants</p>
+              </div>
+              <div class="flex items-center mb-3">
+                <i class="fa-solid fa-person-running text-primary-blue text-xl me-3"></i>
+                <p class="font-medium mb-0">5Km</p>
+              </div>
+              <div class="flex items-center mb-3">
+                <i class="fa-solid fa-tag text-primary-blue text-xl me-3"></i>
+                <p class="font-medium mb-0">R100 - R500</p>
+              </div>
             </div>
           </div>
 
@@ -951,13 +985,13 @@
     </div>
 
     <!-- Spacer below banner (lg+) -->
-    <div class="hidden lg:block h-[25vh]"></div>
+    <div class="hidden lg:block h-[20vh]"></div>
 </div>
 
 <!-- Event Results -->
-<div class="py-10" data-controller="accordion">
+<div class="pb-10" data-controller="accordion">
   <!-- Buttons -->
-  <div class="w-full flex justify-center py-3 lg:pb-5 flex-wrap gap-3">
+  <div class="w-full flex justify-center pt-6 flex-wrap gap-3">
     <button type="submit" class="btn-dark-solid px-4 py-2 rounded-full uppercase h-[60px] w-[75%] lg:w-[180px] mt-3 lg:mt-0">
       Results
     </button>
