@@ -1,3 +1,4 @@
+<% if false %>
 <nav class="bg-transparent fixed w-full z-40 top-0 start-0" data-controller="navbar" data-navbar-target="nav">
   <div class="flex flex-wrap items-center justify-between p-4">
     <a href="#" class="flex items-center space-x-3 rtl:space-x-reverse">
@@ -1635,11 +1636,118 @@
     </div>
   </div>
 </footer>
+<% end %>
 
 
+<div class="h-[100vh] bg-blue-900 flex justify-center items-center" data-controller="temporal-accordion">
+  <div class="grid grid-cols-[4fr_5fr] w-[90%] h-[80%] gap-4">
+    <div class="h-full w-full">
+    </div>
 
+    <div class="h-full w-full d-flex flex-col">
 
+      <div data-action="click->temporal-accordion#handleAccordionClick" 
+           data-temporal-accordion-target="accordion" data-active-date="1/5/2026" 
+           data-inactive-date="30/5/2026" 
+           class="w-full h-fit cursor-pointer mb-3 rounded-md overflow-hidden">
+        <div data-temporal-accordion-target="accordionHeader" class="temporal-accordion-header-visible bg-white p-3 rounded-md">
+          <div class="flex justify-between items-center">
+            <h1 class="font-semibold text-2xl">
+              Accordion 1
+            </h1>
 
+            <div class="w-[30%] flex justify-evenly">
+              <div class="w-[25%] aspect-square rounded-md bg-gray-900/50 ">
+              </div>
+              <div class="w-[25%] aspect-square rounded-md bg-gray-900/50 ">
+              </div>
+              <div class="w-[25%] aspect-square rounded-md bg-gray-900/50 ">
+              </div>
+            </div>
+          </div>
+        </div>
+        <div data-temporal-accordion-target="accordionWindow" class="temporal-accordion-close bg-red-900">
+          <div class="min-h-0 relative bg-center bg-cover bg-no-repeat" style="background-image: url('<%= asset_path('Image_15.jpg') %>');">
+            <div class="bg-black/50 absolute w-full h-full z-1"></div>
+            <div class="p-5 text-white relative z-2">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
+              Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. 
+              Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. 
+              Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div data-action="click->temporal-accordion#handleAccordionClick" 
+           data-temporal-accordion-target="accordion" data-active-date="1/6/2026" 
+           data-inactive-date="30/6/2026" 
+           class="w-full h-fit cursor-pointer mb-3 rounded-md overflow-hidden">
+        <div data-temporal-accordion-target="accordionHeader" class="temporal-accordion-header-visible bg-white p-3 rounded-md">
+          <div class="flex justify-between items-center">
+            <h1 class="font-semibold text-2xl">
+              Accordion 1
+            </h1>
+
+            <div class="w-[30%] flex justify-evenly">
+              <div class="w-[25%] aspect-square rounded-md bg-gray-900/50 ">
+              </div>
+              <div class="w-[25%] aspect-square rounded-md bg-gray-900/50 ">
+              </div>
+              <div class="w-[25%] aspect-square rounded-md bg-gray-900/50 ">
+              </div>
+            </div>
+          </div>
+        </div>
+        <div data-temporal-accordion-target="accordionWindow" class="temporal-accordion-close bg-red-900">
+          <div class="min-h-0 relative bg-center bg-cover bg-no-repeat" style="background-image: url('<%= asset_path('Image_15.jpg') %>');">
+            <div class="bg-black/50 absolute w-full h-full z-1"></div>
+            <div class="p-5 text-white relative z-2">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
+              Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. 
+              Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. 
+              Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <div data-action="click->temporal-accordion#handleAccordionClick" 
+           data-temporal-accordion-target="accordion" data-active-date="1/8/2026" 
+           data-inactive-date="30/8/2026" 
+           class="w-full h-fit cursor-pointer mb-3 rounded-md overflow-hidden">
+        <div data-temporal-accordion-target="accordionHeader" class="temporal-accordion-header-visible bg-white p-3 rounded-md">
+          <div class="flex justify-between items-center">
+            <h1 class="font-semibold text-2xl">
+              Accordion 1
+            </h1>
+
+            <div class="w-[30%] flex justify-evenly">
+              <div class="w-[25%] aspect-square rounded-md bg-gray-900/50 ">
+              </div>
+              <div class="w-[25%] aspect-square rounded-md bg-gray-900/50 ">
+              </div>
+              <div class="w-[25%] aspect-square rounded-md bg-gray-900/50 ">
+              </div>
+            </div>
+          </div>
+        </div>
+        <div data-temporal-accordion-target="accordionWindow" class="temporal-accordion-close bg-red-900">
+          <div class="min-h-0 relative bg-center bg-cover bg-no-repeat" style="background-image: url('<%= asset_path('Image_15.jpg') %>');">
+            <div class="bg-black/50 absolute w-full h-full z-1"></div>
+            <div class="p-5 text-white relative z-2">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
+              Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. 
+              Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. 
+              Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</div>
 
 
 
