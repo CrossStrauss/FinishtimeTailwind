@@ -1644,31 +1644,40 @@
     <div class="h-full w-full">
     </div>
 
+
+
     <div class="h-full w-full d-flex flex-col">
 
       <div data-action="click->temporal-accordion#handleAccordionClick" 
            data-temporal-accordion-target="accordion" 
            data-active-date="1/5/2026" 
            data-inactive-date="30/5/2026" 
-           class="w-full h-fit cursor-pointer mb-3 rounded-md overflow-hidden">
+           class="w-full h-fit cursor-pointer mb-3 rounded-md overflow-hidden bg-white">
         <div data-temporal-accordion-target="accordionHeader" class="temporal-accordion-header-visible bg-white rounded-md">
           <div class="flex flex-col md:flex-row md:justify-between items-center">
             <h1 class="font-semibold text-2xl">
               Accordion 1
             </h1>
 
-            <div class="w-[30%] flex justify-evenly">
-              <div class="w-[25%] aspect-square rounded-md bg-gray-900/50 ">
+            <div class="flex flex-row w-[30%] items-center">
+              <div class="w-full flex justify-evenly">
+                <div class="w-[25%] aspect-square rounded-md bg-gray-900/50 ">
+                </div>
+                <div class="w-[25%] aspect-square rounded-md bg-gray-900/50 ">
+                </div>
+                <div class="w-[25%] aspect-square rounded-md bg-gray-900/50 ">
+                </div>
               </div>
-              <div class="w-[25%] aspect-square rounded-md bg-gray-900/50 ">
-              </div>
-              <div class="w-[25%] aspect-square rounded-md bg-gray-900/50 ">
-              </div>
+
+              <svg data-temporal-accordion-target="accordionIndicator" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-12">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M6 18 18 6M6 6l12 12" />
+              </svg>
             </div>
+
           </div>
         </div>
-        <div data-temporal-accordion-target="accordionWindow" class="temporal-accordion-close bg-red-900">
-          <div class="min-h-0 relative bg-center bg-cover bg-no-repeat" style="background-image: url('<%= asset_path('Image_15.jpg') %>');">
+        <div data-temporal-accordion-target="accordionWindow" class="temporal-accordion-close">
+          <div class="min-h-0 relative bg-center bg-cover bg-no-repeat h-full">
             <div class="bg-black/50 absolute w-full h-full z-1"></div>
             <div class="p-5 text-white relative z-2">
               Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
@@ -1680,77 +1689,9 @@
         </div>
       </div>
 
-      <div data-action="click->temporal-accordion#handleAccordionClick" 
-           data-temporal-accordion-target="accordion" 
-           data-active-date="1/6/2026" 
-           data-inactive-date="30/6/2026" 
-           class="w-full h-fit cursor-pointer mb-3 rounded-md overflow-hidden">
-        <div data-temporal-accordion-target="accordionHeader" class="temporal-accordion-header-visible bg-white rounded-md">
-          <div class="flex flex-col md:flex-row md:justify-between items-center">
-            <h1 class="font-semibold text-2xl">
-              Accordion 1
-            </h1>
-
-            <div class="w-[30%] flex justify-evenly">
-              <div class="w-[25%] aspect-square rounded-md bg-gray-900/50 ">
-              </div>
-              <div class="w-[25%] aspect-square rounded-md bg-gray-900/50 ">
-              </div>
-              <div class="w-[25%] aspect-square rounded-md bg-gray-900/50 ">
-              </div>
-            </div>
-          </div>
-        </div>
-        <div data-temporal-accordion-target="accordionWindow" class="temporal-accordion-close bg-red-900">
-          <div class="min-h-0 relative bg-center bg-cover bg-no-repeat" style="background-image: url('<%= asset_path('Image_15.jpg') %>');">
-            <div class="bg-black/50 absolute w-full h-full z-1"></div>
-            <div class="p-5 text-white relative z-2">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
-              Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. 
-              Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. 
-              Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <div data-action="click->temporal-accordion#handleAccordionClick" 
-           data-temporal-accordion-target="accordion" 
-           data-active-date="1/7/2026" 
-           data-inactive-date="30/7/2026" 
-           class="w-full h-fit cursor-pointer mb-3 rounded-md overflow-hidden">
-        <div data-temporal-accordion-target="accordionHeader" class="temporal-accordion-header-visible bg-white rounded-md">
-          <div class="flex flex-col md:flex-row md:justify-between items-center">
-            <h1 class="font-semibold text-2xl">
-              Accordion 1
-            </h1>
-
-            <div class="w-[30%] flex justify-evenly">
-              <div class="w-[25%] aspect-square rounded-md bg-gray-900/50 ">
-              </div>
-              <div class="w-[25%] aspect-square rounded-md bg-gray-900/50 ">
-              </div>
-              <div class="w-[25%] aspect-square rounded-md bg-gray-900/50 ">
-              </div>
-            </div>
-          </div>
-        </div>
-        <div data-temporal-accordion-target="accordionWindow" class="temporal-accordion-close bg-red-900">
-          <div class="min-h-0 relative bg-center bg-cover bg-no-repeat" style="background-image: url('<%= asset_path('Image_15.jpg') %>');">
-            <div class="bg-black/50 absolute w-full h-full z-1"></div>
-            <div class="p-5 text-white relative z-2">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
-              Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. 
-              Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. 
-              Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum
-            </div>
-          </div>
-        </div>
-      </div>
-
-    
 
     </div>
+
   </div>
 </div>
 

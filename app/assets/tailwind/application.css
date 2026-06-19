@@ -116,11 +116,11 @@ body {
     }
 
     .temporal-accordion-open {
-        @apply grid grid-rows-[1fr] overflow-hidden p-3 opacity-100 transition-all duration-500 ease-in-out min-h-[30vh];
+        @apply  h-[30vh] grid-rows-[1fr] overflow-hidden opacity-100 transition-all duration-500 ease-in-out;
     }
 
     .temporal-accordion-close {
-        @apply grid grid-rows-[0fr] overflow-hidden p-0 opacity-0 transition-all duration-500 ease-in-out;
+        @apply h-[0] overflow-hidden p-0 opacity-0 transition-all duration-500 ease-in-out;
     }
 
     .temporal-accordion-header-hidden {
@@ -128,7 +128,7 @@ body {
     }
 
     .temporal-accordion-header-visible {
-        @apply max-h-40 overflow-hidden px-3 py-3 opacity-100 transition-all duration-500 ease-in-out;
+        @apply max-h-40 overflow-hidden px-3 py-2 opacity-100 transition-all duration-500 ease-in-out;
     }
 }
 

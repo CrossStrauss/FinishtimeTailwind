@@ -2,7 +2,7 @@ import { Controller } from "@hotwired/stimulus"
 
 // Connects to data-controller="temporal-accordion"
 export default class extends Controller {
-  static targets = ["accordion", "accordionHeader", "accordionWindow"]
+  static targets = ["accordion", "accordionHeader", "accordionWindow", "accordionIndicator"]
 
   connect() {
     this.activeIndex = this.findInitiallyOpenIndex()
@@ -52,12 +52,16 @@ export default class extends Controller {
   applyAccordionState(index, isOpen) {
     const header = this.accordionHeaderTargets[index]
     const window = this.accordionWindowTargets[index]
+    const indicator = this.accordionIndicatorTargets[index]
 
     header.classList.toggle("temporal-accordion-header-hidden", isOpen)
     header.classList.toggle("temporal-accordion-header-visible", !isOpen)
 
     window.classList.toggle("temporal-accordion-open", isOpen)
     window.classList.toggle("temporal-accordion-close", !isOpen)
+
+    indicator.classList.toggle("rotate-180", isOpen)
+    indicator.classList.add("transition-all", "duration-300", isOpen)
   }
 
   normalizedToday() {
