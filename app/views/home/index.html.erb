@@ -14,6 +14,7 @@
     </div>
 
     <div class="h-full w-full d-flex flex-col">
+      
       <div data-action="click->temporal-accordion#handleAccordionClick" 
            data-temporal-accordion-target="accordion" 
            data-active-date="1/6/2026" 
@@ -21,16 +22,16 @@
            class="w-full h-fit cursor-pointer mb-3 rounded-sm overflow-hidden text-white relative">
         <div class="bg-black/50 ">
           <div data-temporal-accordion-target="accordionHeader" class="temporal-accordion-header-visible bg-two-oceans-dark-blue rounded-sm">
-            <div class="flex flex-col md:flex-row md:justify-between md:items-center px-4 py-3 md:py-0 md:ps-7 ms:pe-3 relative">
+            <div class="flex flex-col md:flex-row md:items-center px-4 py-3 md:py-0 md:ps-7 ms:pe-3 relative w-full">
               <h1 class="font-bold uppercase text-lg leading-none w-fit">
                 Blue Number <br> Club
               </h1>
 
-              <p class="leading-none pt-2 md:pt-0 opacity-75 px-5">
+              <p class="leading-none pt-2 md:pt-0 opacity-75 md:px-5">
                 Priority entries for Two Oceans Blue Number Club Members
               </p>
               
-              <div class=" hidden md:flex flex-row w-fit items-center justify-between">
+              <div class=" hidden md:flex flex-row w-fit items-center justify-between grow">
                 <%# <div class="w-fit flex flex-row bg-counter-bg w-fit rounded-lg px-1 py-2">
                   <div class="rounded-md flex flex-col items-center justify-center px-2 h-fit">
                     <p class="text-2xl leading-none">00</p>
@@ -87,6 +88,7 @@
           </div>
         </div>
       </div>
+
       <div data-action="click->temporal-accordion#handleAccordionClick" 
            data-temporal-accordion-target="accordion" 
            data-active-date="1/7/2026" 
@@ -94,17 +96,17 @@
            class="w-full h-fit cursor-pointer mb-3 rounded-sm overflow-hidden text-white relative">
         <div class="bg-black/50 ">
           <div data-temporal-accordion-target="accordionHeader" class="temporal-accordion-header-visible bg-two-oceans-dark-blue rounded-sm">
-            <div class="flex flex-col md:flex-row md:justify-between md:items-center px-4 py-3 md:py-0 md:ps-7 ms:pe-3 relative">
+            <div class="flex flex-col md:flex-row md:items-center px-4 py-3 md:py-0 md:ps-7 ms:pe-3 relative w-full">
               <h1 class="font-bold uppercase text-lg leading-none w-fit">
                 Blue Number <br> Club
               </h1>
 
-              <p class="leading-none pt-2 md:pt-0 opacity-75 px-5">
+              <p class="leading-none pt-2 md:pt-0 opacity-75 md:px-5">
                 Priority entries for Two Oceans Blue Number Club Members
               </p>
               
-              <div class=" hidden md:flex flex-row w-fit items-center justify-between">
-                <div class="w-fit flex flex-row bg-counter-bg w-fit rounded-lg px-1 py-2 me-3">
+              <div class=" hidden md:flex flex-row w-fit items-center justify-between grow">
+                <div class="w-fit flex flex-row bg-counter-bg w-fit rounded-lg px-1 py-2">
                   <div class="rounded-md flex flex-col items-center justify-center px-2 h-fit">
                     <p class="text-2xl leading-none">00</p>
                     <p class="uppercase text-xs leading-none pt-1">Days</p>
@@ -154,73 +156,7 @@
           </div>
         </div>
       </div>
-      <div data-action="click->temporal-accordion#handleAccordionClick" 
-           data-temporal-accordion-target="accordion" 
-           data-active-date="1/8/2026" 
-           data-inactive-date="30/8/2026" 
-           class="w-full h-fit cursor-pointer mb-3 rounded-sm overflow-hidden text-white relative">
-        <div class="bg-black/50 ">
-          <div data-temporal-accordion-target="accordionHeader" class="temporal-accordion-header-visible bg-two-oceans-dark-blue rounded-sm">
-            <div class="flex flex-col md:flex-row md:justify-between md:items-center px-4 py-3 md:py-0 md:ps-7 ms:pe-3 relative">
-              <h1 class="font-bold uppercase text-lg leading-none w-fit">
-                Blue Number <br> Club
-              </h1>
 
-              <p class="leading-none pt-2 md:pt-0 opacity-75 px-5">
-                Priority entries for Two Oceans Blue Number Club Members
-              </p>
-              
-              <div class=" hidden md:flex flex-row w-fit items-center justify-between">
-                <div class="w-fit flex flex-row bg-counter-bg w-fit rounded-lg px-1 py-2 me-3">
-                  <div class="rounded-md flex flex-col items-center justify-center px-2 h-fit">
-                    <p class="text-2xl leading-none">00</p>
-                    <p class="uppercase text-xs leading-none pt-1">Days</p>
-                  </div>
-                   <div class="rounded-md flex flex-col items-center justify-center px-2 h-fit">
-                    <p class="text-2xl leading-none">00</p>
-                    <p class="uppercase text-xs leading-none pt-1">Hour</p>
-                  </div>
-                  <div class="rounded-md flex flex-col items-center justify-center px-2 h-fit">
-                    <p class="text-2xl leading-none">00</p>
-                    <p class="uppercase text-xs leading-none pt-1">Mins</p>
-                  </div>
-                </div>
-
-                <%# <div class="flex justify-center pt-4 h-full flex justify-center items-center pe-5 md:py-0">
-                  <a class="bg-two-oceans-orange rounded-full text-white px-8 py-2 w-fit">
-                    Enter Now
-                  </a>
-                </div> %>
-                
-                <svg data-temporal-accordion-target="accordionIndicator" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6 hidden  md:block">
-                  <path stroke-linecap="round" stroke-linejoin="round" d="M12 4.5v15m7.5-7.5h-15" />
-                </svg>
-              </div>
-
-              <svg data-temporal-accordion-target="accordionIndicator" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6 absolute md:hidden top-3 right-3">
-                <path stroke-linecap="round" stroke-linejoin="round" d="M12 4.5v15m7.5-7.5h-15" />
-              </svg>
-              
-            </div>
-          </div>
-        </div>
-
-        <div data-temporal-accordion-target="accordionWindow" class="temporal-accordion-close">
-          <div class="min-h-0 relative bg-center bg-cover bg-no-repeat h-full">
-            <div class="bg-black/50 absolute w-full h-full z-1"></div>
-            <div class="p-5 text-white relative z-2">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
-              Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. 
-              Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. 
-              Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum
-            </div>
-
-            <svg data-temporal-accordion-target="accordionIndicator" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6 hidden md:block absolute top-5 right-3 z-10">
-              <path stroke-linecap="round" stroke-linejoin="round" d="M12 4.5v15m7.5-7.5h-15" />
-            </svg>
-          </div>
-        </div>
-      </div>
     </div>
   </div>
 
