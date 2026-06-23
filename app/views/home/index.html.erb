@@ -1,182 +1,183 @@
-<div class="relative h-full md:h-[100vh] bg-two-oceans-light-blue flex justify-center items-center flex flex-col" data-controller="temporal-accordion">
-  <div class="w-full absolute h-[26vh] md:h-[33vh] bg-gray-900/50 top-0 z-1"></div>
-  <div class="grid grid-cols-1 md:grid-cols-[4fr_7fr] w-[80%] h-[80%] gap-4 md:pt-10 z-2">
-    
-    <div class="md:h-full w-full py-5 text-white px-5 pt-30 md:pt-10 md:px-0">
-      <h2 class="uppercase text-[45px] md:text-[75px] leading-none">
-        Enter the world's
-      </h2>
-       <h2 class="uppercase text-[45px] md:text-[75px] leading-none font-bold">
-        Most Beautiful Marathon
-      </h2>
-      <p class="uppercase mt-2 text-[25px] md:text-[30px] font-semibold">
-        April 10-11 2027
-      </p>
-      <%= image_tag 'TOM_Main_Logo.svg', class: 'w-[30%] mt-5 md:mt-15' %>
-    </div>
-
-    <div class="h-full w-full d-flex flex-col">
+<div class="flex">
+  <div class="relative h-full xl:h-[100vh] bg-two-oceans-light-blue flex justify-center items-center flex flex-col" data-controller="temporal-accordion">
+    <div class="w-full absolute h-[26vh] xl:h-[33vh] bg-[#3ba2da] top-0 z-1"></div>
+    <div class="grid grid-cols-1 xl:grid-cols-[4fr_7fr] w-[80%] h-[80%] gap-4 md:pt-10 z-2">
       
-      <div data-action="click->temporal-accordion#handleAccordionClick" 
-           data-temporal-accordion-target="accordion" 
-           data-active-date="1/6/2026" 
-           data-inactive-date="30/6/2026" 
-           class="w-full h-fit cursor-pointer mb-3 rounded-sm overflow-hidden text-white relative">
-        <div class="bg-black/50 ">
-          <div data-temporal-accordion-target="accordionHeader" class="temporal-accordion-header-visible bg-two-oceans-dark-blue rounded-sm">
-            <div class="flex flex-col md:flex-row md:items-center px-4 py-3 md:py-0 md:ps-7 ms:pe-3 relative w-full">
-              <h1 class="font-bold uppercase text-lg leading-none w-fit">
-                Blue Number <br> Club
-              </h1>
-
-              <p class="leading-none pt-2 md:pt-0 opacity-75 md:px-5 text-sm">
-                Priority entries for Two Oceans Blue Number Club Members
-              </p>
-              
-              <div class=" hidden md:flex flex-row w-fit items-center justify-end grow">
-                <%# <div class="w-fit flex flex-row bg-counter-bg w-fit rounded-lg px-1 py-2">
-                  <div class="rounded-md flex flex-col items-center justify-center px-2 h-fit">
-                    <p class="text-2xl leading-none">00</p>
-                    <p class="uppercase text-xs leading-none pt-1">Days</p>
-                  </div>
-                   <div class="rounded-md flex flex-col items-center justify-center px-2 h-fit">
-                    <p class="text-2xl leading-none">00</p>
-                    <p class="uppercase text-xs leading-none pt-1">Hour</p>
-                  </div>
-                  <div class="rounded-md flex flex-col items-center justify-center px-2 h-fit">
-                    <p class="text-2xl leading-none">00</p>
-                    <p class="uppercase text-xs leading-none pt-1">Mins</p>
-                  </div>
-                </div> %>
-
-                <div class="flex justify-center pt-4 h-full flex justify-center items-center pe-5 md:py-0">
-                  <a class="bg-two-oceans-orange rounded-full flex justify-center items-center text-white px-8 py-2 w-fit">
-                    <p class="uppercase">Enter Now</p>
-                  </a>
-                </div>
-                
-                <svg data-temporal-accordion-target="accordionIndicator" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6 hidden  md:block">
-                  <path stroke-linecap="round" stroke-linejoin="round" d="M12 4.5v15m7.5-7.5h-15" />
-                </svg>
-              </div>
-
-              <div class="flex justify-center md:hidden pt-4 h-full flex justify-center items-center pe-5 md:py-0">
-                <a class="bg-two-oceans-orange rounded-full text-white px-8 py-2 w-fit">
-                  Enter Now
-                </a>
-              </div>
-
-              <svg data-temporal-accordion-target="accordionIndicator" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6 absolute md:hidden top-3 right-3">
-                <path stroke-linecap="round" stroke-linejoin="round" d="M12 4.5v15m7.5-7.5h-15" />
-              </svg>
-              
-            </div>
-          </div>
-        </div>
-
-        <div data-temporal-accordion-target="accordionWindow" class="temporal-accordion-close">
-          <div class="min-h-0 relative bg-center bg-cover bg-no-repeat h-full">
-            <div class="bg-black absolute w-full h-full z-1"></div>
-            <div class="p-5 text-white relative z-2">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
-              Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. 
-              Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. 
-              Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum
-            </div>
-
-            <svg data-temporal-accordion-target="accordionIndicator" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6 hidden md:block absolute top-5 right-3 z-10">
-              <path stroke-linecap="round" stroke-linejoin="round" d="M12 4.5v15m7.5-7.5h-15" />
-            </svg>
-          </div>
-        </div>
+      <div class="md:h-full w-full py-5 text-white px-5 pt-30 md:pt-10 md:px-0">
+        <h2 class="uppercase text-[45px] xl:text-[75px] leading-none">
+          Enter the world's
+        </h2>
+        <h2 class="uppercase text-[45px] xl:text-[75px] leading-none font-bold">
+          Most Beautiful Marathon
+        </h2>
+        <p class="uppercase mt-2 text-[25px] xl:text-[30px] font-semibold">
+          April 10-11 2027
+        </p>
+        <%= image_tag 'TOM_Main_Logo.svg', class: 'w-[30%] mt-5 md:mt-15' %>
       </div>
 
-      <div data-action="click->temporal-accordion#handleAccordionClick" 
-           data-temporal-accordion-target="accordion" 
-           data-active-date="1/7/2026" 
-           data-inactive-date="30/7/2026" 
-           class="w-full h-fit cursor-pointer mb-3 rounded-sm overflow-hidden text-white relative">
-        <div class="bg-black/50 ">
-          <div data-temporal-accordion-target="accordionHeader" class="temporal-accordion-header-visible bg-two-oceans-dark-blue rounded-sm">
-            <div class="flex flex-col md:flex-row md:items-center px-4 py-3 md:py-0 md:ps-7 ms:pe-3 relative w-full">
-              <h1 class="font-bold uppercase text-lg leading-none w-fit">
-                Blue Number <br> Club
-              </h1>
+      <div class="h-full w-full d-flex flex-col">
+        
+        <div data-action="click->temporal-accordion#handleAccordionClick" 
+            data-temporal-accordion-target="accordion" 
+            data-active-date="1/6/2026" 
+            data-inactive-date="30/6/2026" 
+            class="w-full h-fit cursor-pointer mb-3 rounded-sm overflow-hidden text-white relative">
+          <div class="bg-black/50 ">
+            <div data-temporal-accordion-target="accordionHeader" class="temporal-accordion-header-visible bg-two-oceans-dark-blue rounded-sm">
+              <div class="flex flex-col md:flex-row md:items-center px-4 py-3 md:py-0 md:ps-7 ms:pe-3 relative w-full">
+                <h1 class="font-bold uppercase text-lg leading-none w-fit">
+                  Blue Number <br> Club
+                </h1>
 
-              <p class="leading-none pt-2 md:pt-0 opacity-75 md:px-5 text-sm">
-                Priority entries for Two Oceans Blue Number Club Members
-              </p>
-              
-              <div class=" hidden md:flex flex-row w-fit items-center justify-end grow">
-                <div class="w-fit flex flex-row bg-counter-bg w-fit rounded-lg px-1 py-2 me-5">
-                  <div class="rounded-md flex flex-col items-center justify-center px-2 h-fit">
-                    <p class="text-2xl leading-none">00</p>
-                    <p class="uppercase text-xs leading-none pt-1">Days</p>
+                <p class="leading-none pt-2 md:pt-0 opacity-75 md:px-5 text-sm">
+                  Priority entries for Two Oceans Blue Number Club Members
+                </p>
+                
+                <div class=" hidden md:flex flex-row w-fit items-center justify-end grow">
+                  <%# <div class="w-fit flex flex-row bg-counter-bg w-fit rounded-lg px-1 py-2">
+                    <div class="rounded-md flex flex-col items-center justify-center px-2 h-fit">
+                      <p class="text-2xl leading-none">00</p>
+                      <p class="uppercase text-xs leading-none pt-1">Days</p>
+                    </div>
+                    <div class="rounded-md flex flex-col items-center justify-center px-2 h-fit">
+                      <p class="text-2xl leading-none">00</p>
+                      <p class="uppercase text-xs leading-none pt-1">Hour</p>
+                    </div>
+                    <div class="rounded-md flex flex-col items-center justify-center px-2 h-fit">
+                      <p class="text-2xl leading-none">00</p>
+                      <p class="uppercase text-xs leading-none pt-1">Mins</p>
+                    </div>
+                  </div> %>
+
+                  <div class="flex justify-center pt-4 h-full flex justify-center items-center pe-5 md:py-0">
+                    <a class="bg-two-oceans-orange rounded-full flex justify-center items-center text-white px-8 py-2 w-fit">
+                      <p class="uppercase">Enter Now</p>
+                    </a>
                   </div>
-                   <div class="rounded-md flex flex-col items-center justify-center px-2 h-fit">
-                    <p class="text-2xl leading-none">00</p>
-                    <p class="uppercase text-xs leading-none pt-1">Hour</p>
-                  </div>
-                  <div class="rounded-md flex flex-col items-center justify-center px-2 h-fit">
-                    <p class="text-2xl leading-none">00</p>
-                    <p class="uppercase text-xs leading-none pt-1">Mins</p>
-                  </div>
+                  
+                  <svg data-temporal-accordion-target="accordionIndicator" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6 hidden  md:block">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M12 4.5v15m7.5-7.5h-15" />
+                  </svg>
                 </div>
 
-                <%# <div class="flex justify-center pt-4 h-full flex justify-center items-center pe-5 md:py-0">
+                <div class="flex justify-center md:hidden pt-4 h-full flex justify-center items-center pe-5 md:py-0">
                   <a class="bg-two-oceans-orange rounded-full text-white px-8 py-2 w-fit">
                     Enter Now
                   </a>
-                </div> %>
-                
-                <svg data-temporal-accordion-target="accordionIndicator" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6 hidden  md:block">
+                </div>
+
+                <svg data-temporal-accordion-target="accordionIndicator" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6 absolute md:hidden top-3 right-3">
                   <path stroke-linecap="round" stroke-linejoin="round" d="M12 4.5v15m7.5-7.5h-15" />
                 </svg>
+                
+              </div>
+            </div>
+          </div>
+
+          <div data-temporal-accordion-target="accordionWindow" class="temporal-accordion-close">
+            <div class="min-h-0 relative bg-center bg-cover bg-no-repeat h-full">
+              <div class="bg-black absolute w-full h-full z-1"></div>
+              <div class="p-5 text-white relative z-2">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
+                Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. 
+                Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. 
+                Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum
               </div>
 
-              <svg data-temporal-accordion-target="accordionIndicator" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6 absolute md:hidden top-3 right-3">
+              <svg data-temporal-accordion-target="accordionIndicator" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6 hidden md:block absolute top-5 right-3 z-10">
                 <path stroke-linecap="round" stroke-linejoin="round" d="M12 4.5v15m7.5-7.5h-15" />
               </svg>
-              
             </div>
           </div>
         </div>
 
-        <div data-temporal-accordion-target="accordionWindow" class="temporal-accordion-close">
-          <div class="min-h-0 relative bg-center bg-cover bg-no-repeat h-full">
-            <div class="bg-black absolute w-full h-full z-1"></div>
-            <div class="p-5 text-white relative z-2">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
-              Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. 
-              Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. 
-              Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum
-            </div>
+        <div data-action="click->temporal-accordion#handleAccordionClick" 
+            data-temporal-accordion-target="accordion" 
+            data-active-date="1/7/2026" 
+            data-inactive-date="30/7/2026" 
+            class="w-full h-fit cursor-pointer mb-3 rounded-sm overflow-hidden text-white relative">
+          <div class="bg-black/50 ">
+            <div data-temporal-accordion-target="accordionHeader" class="temporal-accordion-header-visible bg-two-oceans-dark-blue rounded-sm">
+              <div class="flex flex-col md:flex-row md:items-center px-4 py-3 md:py-0 md:ps-7 ms:pe-3 relative w-full">
+                <h1 class="font-bold uppercase text-lg leading-none w-fit">
+                  Blue Number <br> Club
+                </h1>
 
-            <svg data-temporal-accordion-target="accordionIndicator" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6 hidden md:block absolute top-5 right-3 z-10">
-              <path stroke-linecap="round" stroke-linejoin="round" d="M12 4.5v15m7.5-7.5h-15" />
-            </svg>
+                <p class="leading-none pt-2 md:pt-0 opacity-75 md:px-5 text-sm">
+                  Priority entries for Two Oceans Blue Number Club Members
+                </p>
+                
+                <div class=" hidden md:flex flex-row w-fit items-center justify-end grow">
+                  <div class="w-fit flex flex-row bg-counter-bg w-fit rounded-lg px-1 py-2 me-5">
+                    <div class="rounded-md flex flex-col items-center justify-center px-2 h-fit">
+                      <p class="text-2xl leading-none">00</p>
+                      <p class="uppercase text-xs leading-none pt-1">Days</p>
+                    </div>
+                    <div class="rounded-md flex flex-col items-center justify-center px-2 h-fit">
+                      <p class="text-2xl leading-none">00</p>
+                      <p class="uppercase text-xs leading-none pt-1">Hour</p>
+                    </div>
+                    <div class="rounded-md flex flex-col items-center justify-center px-2 h-fit">
+                      <p class="text-2xl leading-none">00</p>
+                      <p class="uppercase text-xs leading-none pt-1">Mins</p>
+                    </div>
+                  </div>
+
+                  <%# <div class="flex justify-center pt-4 h-full flex justify-center items-center pe-5 md:py-0">
+                    <a class="bg-two-oceans-orange rounded-full text-white px-8 py-2 w-fit">
+                      Enter Now
+                    </a>
+                  </div> %>
+                  
+                  <svg data-temporal-accordion-target="accordionIndicator" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6 hidden  md:block">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M12 4.5v15m7.5-7.5h-15" />
+                  </svg>
+                </div>
+
+                <svg data-temporal-accordion-target="accordionIndicator" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6 absolute md:hidden top-3 right-3">
+                  <path stroke-linecap="round" stroke-linejoin="round" d="M12 4.5v15m7.5-7.5h-15" />
+                </svg>
+                
+              </div>
+            </div>
+          </div>
+
+          <div data-temporal-accordion-target="accordionWindow" class="temporal-accordion-close">
+            <div class="min-h-0 relative bg-center bg-cover bg-no-repeat h-full">
+              <div class="bg-black absolute w-full h-full z-1"></div>
+              <div class="p-5 text-white relative z-2">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
+                Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. 
+                Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. 
+                Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum
+              </div>
+
+              <svg data-temporal-accordion-target="accordionIndicator" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6 hidden md:block absolute top-5 right-3 z-10">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M12 4.5v15m7.5-7.5h-15" />
+              </svg>
+            </div>
           </div>
         </div>
+
       </div>
-
     </div>
+
+    <div class="w-[80%] mx-auto grid col-span-1 md:grid-cols-4 pt-8 pb-10 xl:py-0">
+      <div class="w-full"></div>
+      <div class="w-full col-span-2 flex items-center justify-center order-3 md:order-2">
+        <p class="text-white text-center">
+          Lorem ipsum dolor sit amet, consectetur elit, sed do eiusmod tempor incididunt ut labore.
+        <p>
+      </div>
+      <div class="w-full flex items-center order-2 md:order-3 md:items-end flex-col text-white pb-5 md:pt-0">
+        <p class="uppercase text-xs mb-1 md:mb-2">Online entries by</p>
+        <%= image_tag 'easyreg_logo_cropped.png', class: "w-[35%]" %>
+      </div>
+    </div>
+
   </div>
-
-  <div class="w-[80%] mx-auto grid col-span-1 md:grid-cols-4 pt-8 pb-10 md:py-0">
-    <div class="w-full"></div>
-    <div class="w-full col-span-2 flex items-center justify-center order-3 md:order-2">
-      <p class="text-white text-center">
-        Lorem ipsum dolor sit amet, consectetur elit, sed do eiusmod tempor incididunt ut labore.
-      <p>
-    </div>
-    <div class="w-full flex items-center order-2 md:order-3 md:items-end flex-col text-white pb-5 md:pt-0">
-      <p class="uppercase text-xs mb-1 md:mb-2">Online entries by</p>
-      <%= image_tag 'easyreg_logo_cropped.png', class: "w-[35%]" %>
-    </div>
-  </div>
-
 </div>
-
 
 
 
